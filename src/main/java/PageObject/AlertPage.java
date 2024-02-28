@@ -29,7 +29,7 @@ public class AlertPage extends BasePage {
     }
 
     public void clickOnButt(String nameButton) {
-        WebElement element = (new WebDriverWait(driver, Duration.ofSeconds(10)))
+        WebElement element = (new WebDriverWait(driver, Duration.ofSeconds(20)))
                 .until(ExpectedConditions.presenceOfElementLocated(alertsBtn(nameButton)));
         element.click();
 

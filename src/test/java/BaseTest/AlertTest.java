@@ -7,6 +7,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -51,39 +52,34 @@ public class AlertTest extends BaseTest {
 
 
     private int dataIndex = 0; // Индекс для отслеживания текущего набора данных
-
     @Test(dataProvider = "Providers")
 
     public void processDataProvider(boolean confirm, String input, String expectedOutput) throws InterruptedException {
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
         mainPage.clickOnAlert();
         Thread.sleep(2000);
-        while (dataIndex < checkDataProvider().length) {
-            Thread.sleep(2000);
+        Object[][] dataProvider = checkDataProvider();
+        int dataProviderLength = dataProvider.length;
+        while (dataIndex < dataProviderLength) {
+            // Получаем текущий набор данных из провайдера
+            boolean currentConfirm = (boolean) dataProvider[dataIndex][0];
+            String currentInput = (String) dataProvider[dataIndex][1];
+            String currentExpectedOutput = (String) dataProvider[dataIndex][2];
+
             // Выполняем действия с алертом
             alertPage.clickOnButt(AlertsButtons.PROMPT.getTEXT_ON_BUTTON());
-            Alert alert = driver.switchTo().alert();
-            alert.sendKeys(input);
-            if (confirm) {
-                alert.accept();
-            } else {
-                alert.dismiss();
-            }
             Thread.sleep(2000);
-            // Получаем объект алерта
+            alertPage.switchToAlertAndGetText(currentConfirm, currentInput); // Используем текущие значения input и confirm
+            Thread.sleep(2000);
+            Assert.assertEquals(alertPage.getResultText(), currentExpectedOutput); // Используем текущее ожидаемое значение
+            Thread.sleep(2000);
 
-            Thread.sleep(2000);
             // Закрываем алерт
             dataIndex++;
 
-            if (dataIndex < checkDataProvider().length) {
-                input = (String) checkDataProvider()[dataIndex][1]; // Обновляем переменную input для следующей итерации
             }
 
         }
-
-
-            }
 
 
 
@@ -91,10 +87,10 @@ public class AlertTest extends BaseTest {
             @DataProvider(name = "Providers")
             Object[][] checkDataProvider () {
                 return new Object[][]{
-                        {true, "Hello world", "You entered:Hello world"},
-                        {false, "Hello world", "You entered:" + (null != null ? null : "")},
+                        {true, "Hello world", "You entered: Hello world"},
+                        {false, "Hello world", "You entered:"},
                         {true, "", "You entered:"},
-                        {false, "", "You entered:" + (null != null ? null : "")}
+                        {false, "", "You entered:null"}
                 };
 
             }
