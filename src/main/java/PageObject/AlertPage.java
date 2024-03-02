@@ -16,7 +16,7 @@ public class AlertPage extends BasePage {
     public AlertPage(WebDriver driver) {
 
         super(driver);
-        wait = new WebDriverWait(driver,Duration.ofSeconds(5));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(5));
     }
 
     private static By alertsBtn(String nameButton) {
@@ -46,8 +46,9 @@ public class AlertPage extends BasePage {
         js.executeScript("return " + button.getON_CLICK_JS_FUCTION());
     }
 
-    public String switchToAlertAndGetText(boolean confirm, String... message) {
+    public String switchToAlertAndGetText(boolean confirm, String... message) throws InterruptedException {
         Alert alert = driver.switchTo().alert();
+        Thread.sleep(3000);
         String alertText = alert.getText();
         if (message.length > 0) {
             alert.sendKeys(message[0]);
@@ -57,8 +58,10 @@ public class AlertPage extends BasePage {
         } else {
             alert.dismiss();
         }
+        // Получаем текст алерта после взаимодействия с ним
         return alertText;
     }
+
 
     public String switchToAlertAndGetTextByJs(boolean confirm, String... message) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -90,8 +93,9 @@ public class AlertPage extends BasePage {
         return alertText;
     }
 
-public String  getResultText() {
+    public String getResultText() {
         return driver.findElement(resultOfText()).getText();
 
     }
-    }
+}
+

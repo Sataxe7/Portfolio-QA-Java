@@ -98,9 +98,9 @@ public class clickBtnByJS extends AlertTest {
         Object[][] checkDataProvider () {
             return new Object[][]{
                     {true, "Hello world", "You entered:Hello world"},
-                    {false, "Hello world", "You entered:" + (null != null ? null : "")},
+                    {false, "Hello world", "You entered:" },
                     {true, "", "You entered:"},
-                    {false, "", "You entered:" + (null != null ? null : "")}
+                    {false, "", "You entered:" }
             };
 
         }

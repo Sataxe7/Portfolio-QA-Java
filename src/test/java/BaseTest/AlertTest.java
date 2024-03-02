@@ -3,19 +3,15 @@ package BaseTest;
 import Enums.AlertsButtons;
 import PageObject.AlertPage;
 import PageObject.MainPage;
+import WebDriverManager.DriverManager;
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
-import static PageObject.AlertPage.ALERT_TEXT;
-import static PageObject.AlertPage.CANCEL_TEXT;
+import static PageObject.AlertPage.*;
 
 public class AlertTest extends BaseTest {
 
@@ -42,7 +38,7 @@ public class AlertTest extends BaseTest {
     }
 
     @Test
-    public void confirmDismissTest() {
+    public void confirmDismissTest() throws InterruptedException {
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
         mainPage.clickOnAlert();
         alertPage.clickOnButt(AlertsButtons.CONFIRM.getTEXT_ON_BUTTON());
@@ -51,48 +47,49 @@ public class AlertTest extends BaseTest {
     }
 
 
-    private int dataIndex = 0; // Индекс для отслеживания текущего набора данных
-    @Test(dataProvider = "Providers")
+    int dataindex = 0;
 
+    @Test(dataProvider = "Providers")
     public void processDataProvider(boolean confirm, String input, String expectedOutput) throws InterruptedException {
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
         mainPage.clickOnAlert();
-        Thread.sleep(2000);
-        Object[][] dataProvider = checkDataProvider();
-        int dataProviderLength = dataProvider.length;
-        while (dataIndex < dataProviderLength) {
-            // Получаем текущий набор данных из провайдера
-            boolean currentConfirm = (boolean) dataProvider[dataIndex][0];
-            String currentInput = (String) dataProvider[dataIndex][1];
-            String currentExpectedOutput = (String) dataProvider[dataIndex][2];
-
-            // Выполняем действия с алертом
-            alertPage.clickOnButt(AlertsButtons.PROMPT.getTEXT_ON_BUTTON());
-            Thread.sleep(2000);
-            alertPage.switchToAlertAndGetText(currentConfirm, currentInput); // Используем текущие значения input и confirm
-            Thread.sleep(2000);
-            Assert.assertEquals(alertPage.getResultText(), currentExpectedOutput); // Используем текущее ожидаемое значение
-            Thread.sleep(2000);
-
-            // Закрываем алерт
-            dataIndex++;
-
-            }
-
+        Thread.sleep(4000);
+        alertPage.clickOnButt(AlertsButtons.PROMPT.getTEXT_ON_BUTTON());
+        Thread.sleep(4000);
+        Alert alert = driver.switchTo().alert();
+        String[] message = new String[0];
+        if (message.length > 0) {
+            alert.sendKeys(message[0]);
+            alert.accept();
         }
+       Assert.assertEquals(alert.accept),(input),expectedOutput),PROMT_TEXT);
+        Thread.sleep(4000);
+        Assert.assertEquals(alertPage.getResultText(), expectedOutput);
 
+    }
 
+    @DataProvider(name = "Providers")
+    public Object[][] provideData() {
+        return new Object[][]{
+                {"Some text","You entered:"},
+                {true, "Hello world", "You entered: Hello world"},
+                {false, "Hello world", "You entered:null"},
+                {true, "","You entered:"},
+                {false, "You entered", "You entered: null"}
+        };
 
+    }
 
-            @DataProvider(name = "Providers")
-            Object[][] checkDataProvider () {
-                return new Object[][]{
-                        {true, "Hello world", "You entered: Hello world"},
-                        {false, "Hello world", "You entered:"},
-                        {true, "", "You entered:"},
-                        {false, "", "You entered:null"}
-                };
-
-            }
+    @AfterMethod
+        public void backdriver () {
+            DriverManager.getDriver().navigate().back();
         }
+    }
+
+
+
+
+
+
+
 
