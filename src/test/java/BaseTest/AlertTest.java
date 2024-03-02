@@ -65,7 +65,7 @@ public class AlertTest extends BaseTest {
        Assert.assertEquals(alert.accept),(input),expectedOutput),PROMT_TEXT);
         Thread.sleep(4000);
         Assert.assertEquals(alertPage.getResultText(), expectedOutput);
-
+kkk
     }
 
     @DataProvider(name = "Providers")
