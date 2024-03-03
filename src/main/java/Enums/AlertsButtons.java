@@ -3,8 +3,8 @@ package Enums;
 public enum AlertsButtons {
 
     ALERT("JS Alert", "jsAlert()"),
-    CONFIRM("JS Confirm", "jsAlert()"),
-    PROMPT("JS Prompt", "jsAlert()");
+    CONFIRM("JS Confirm", "jsConfirm()"),
+    PROMPT("JS Prompt", "jsPrompt()");
 
     private final String TEXTONBUTTON;
     private final String ON_CLICK_JS_FUCTION;
