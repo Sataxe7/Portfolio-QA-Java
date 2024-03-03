@@ -1,0 +1,67 @@
+import BaseTest.AlertTest;
+import Enums.AlertsButtons;
+import PageObject.AlertPage;
+import WebDriverManager.DriverManager;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import static PageObject.AlertPage.*;
+
+public class executeJSEvent extends AlertTest {
+    @Test
+    public void alertTest() throws InterruptedException {
+        mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
+        mainPage.clickOnAlertJsExecutor("javascript_alerts");
+        AlertPage.clickBtnByJs(AlertsButtons.ALERT);
+        Assert.assertEquals(alertPage.switchToAlertAndGetText(true), ALERT_TEXT);
+        Assert.assertEquals(alertPage.getResultText(), "You successfully clicked an alert");
+    }
+
+    @Test
+    public void confirmDismissTest() throws InterruptedException {
+        mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
+        mainPage.clickOnAlertJsExecutor("javascript_alerts");
+        AlertPage.executeJsEvent(AlertsButtons.CONFIRM);
+        Assert.assertEquals(alertPage.switchToAlertAndGetText(false), CANCEL_TEXT);
+        Assert.assertEquals(alertPage.getResultText(), "You clicked: Cancel");
+    }
+    @Test
+    public void confirmAlert() throws InterruptedException {
+        mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
+        mainPage.clickOnAlertJsExecutor("javascript_alerts");
+        AlertPage.executeJsEvent(AlertsButtons.CONFIRM);
+        Assert.assertEquals(alertPage.switchToAlertAndGetText(true),CANCEL_TEXT);
+        Assert.assertEquals(alertPage.getResultText(), "You clicked: Ok");
+    }
+
+
+    int dataindex = 0;
+
+    @Test(dataProvider = "Providers")
+    public void processDataProvider(boolean confirm, String input, String expectedOutput) throws InterruptedException {
+        mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
+        mainPage.clickOnAlertJsExecutor("javascript_alerts");
+        AlertPage.executeJsEvent(AlertsButtons.PROMPT);
+        Assert.assertEquals(alertPage.switchToAlertAndGetText(confirm, input),PROMT_TEXT);
+        Assert.assertEquals(alertPage.getResultText(), expectedOutput);
+
+    }
+
+    @DataProvider(name = "Providers")
+    public Object[][] provideData() {
+        return new Object[][]{
+                {true, "Hello world", "You entered: Hello world"},
+                {false, "Hello world", "You entered: null"},
+                {true, "","You entered:"},
+                {false, "You entered", "You entered: null"}
+        };
+
+    }
+
+    @AfterMethod
+    public void backdriver () {
+        DriverManager.getDriver().navigate().back();
+    }
+}
