@@ -3,7 +3,7 @@ package BaseTest;
 import Enums.AlertsButtons;
 import PageObject.AlertPage;
 import PageObject.MainPage;
-import WebDriverManager.DriverManager;
+import driverManager.DriverManager;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -20,7 +20,7 @@ public class AlertTest extends BaseTest {
 
     @BeforeClass
     public void setOn() {
-        SetUpBrowser();
+        setUpBrowser();
         openUrl("https://the-internet.herokuapp.com/");
         mainPage = new MainPage(driver);
         alertPage = new AlertPage(driver);

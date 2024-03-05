@@ -1,17 +1,12 @@
 import BaseTest.AlertTest;
 import Enums.AlertsButtons;
 import PageObject.AlertPage;
-import WebDriverManager.DriverManager;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.JavascriptExecutor;
+import driverManager.DriverManager;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 import static PageObject.AlertPage.*;
 

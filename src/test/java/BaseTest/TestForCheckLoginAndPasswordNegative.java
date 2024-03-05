@@ -11,11 +11,7 @@ public class TestForCheckLoginAndPasswordNegative extends TestForCheckLoginAndPa
 
 
 
-    @Override
-    @BeforeClass
-    public void setUp() {
-        super.setUp();
-    }
+
 
     @Test
     public void checkLoginPage() {

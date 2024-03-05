@@ -1,10 +1,6 @@
 package BaseTest;
 
 import PageObject.LoginPasswordPage;
-import WebDriverManager.DriverManager;
-import com.sun.source.tree.AssertTree;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -20,7 +16,6 @@ public class TestForCheckLoginAndPasswordPositive extends BaseTest {
 
     @BeforeClass
     public void setUp() {
-        SetUpBrowser();
         openUrl(LOGINPAGEURL);
         loginPasswordPage = new LoginPasswordPage(driver);
         currentUrl = driver.getCurrentUrl();

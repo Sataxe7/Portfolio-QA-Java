@@ -1,7 +1,7 @@
 import BaseTest.AlertTest;
 import Enums.AlertsButtons;
 import PageObject.AlertPage;
-import WebDriverManager.DriverManager;
+import driverManager.DriverManager;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
