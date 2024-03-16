@@ -1,11 +1,11 @@
 package BaseTest;
 
-import org.openqa.selenium.WebDriver;
+import driverManager.Listener;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-
+@Listeners(Listener.class)
 
 public class TestForCheckLoginAndPasswordNegative extends TestForCheckLoginAndPasswordPositive {
 
