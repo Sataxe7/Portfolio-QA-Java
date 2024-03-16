@@ -1,6 +1,8 @@
 package BaseTest;
 
 import driverManager.Listener;
+import io.qameta.allure.Description;
+import io.qameta.allure.Owner;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -14,6 +16,8 @@ public class TestForCheckLoginAndPasswordNegative extends TestForCheckLoginAndPa
 
 
     @Test
+    @Owner("Olek")
+    @Description ("Check invalid password input")
     public void checkLoginPage() {
         loginPasswordPage.selectLogin("tomsmith");
         loginPasswordPage.selectPassword("");
