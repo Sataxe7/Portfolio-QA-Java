@@ -8,9 +8,9 @@ import java.util.concurrent.TimeUnit;
 
 
 public class WebDriverFactory {
-    private static WebDriver driver;
+    protected static WebDriver driver;
 
-    private WebDriverFactory() {
+    protected  WebDriverFactory() {
     }
 
     public static WebDriver initDriver(Browsers browser) {

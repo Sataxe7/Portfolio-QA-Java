@@ -5,7 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="998ac32d-8d2d-4130-a2b1-8614c56b1445" name="Changes" comment="Correct++">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/ConsultationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObject/ConsultationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/MainPageHilel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/SelenideExamples.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest/selenideExamples.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/driverManager/WebDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/driverManager/WebDriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest/ConsulTationPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/1eccbb56-5e22-4b47-b40f-37682c6a959a-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/49ef5a8e-c5ad-4c27-8434-75688c6075de-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/6f18248d-57d6-4d3e-bf0a-e6826c5d6d91-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/a7c0c9f7-8ae3-4de0-8162-f25b16caaeea-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Enums/AlertsButtons.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Enums/AlertsButtons.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObject/ConsultationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObject/ConsultationPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/Browsers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverManager/Browsers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/WebDriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverManager/WebDriverFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/allure-maven.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/BaseTest/AlertTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BaseTest/AlertTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/BaseTest/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BaseTest/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/BaseTest/CookieDelete.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BaseTest/CookieDelete.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/BaseTest/TestForCheckLoginAndPasswordPositive.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BaseTest/TestForCheckLoginAndPasswordPositive.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,56 +86,58 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.SelenideExamples.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.AlertTest (1).executor": "Debug",
-    "TestNG.AlertTest.ConfirmDismissTest.executor": "Run",
-    "TestNG.AlertTest.alertTest.executor": "Run",
-    "TestNG.AlertTest.confirmAcceptTest.executor": "Run",
-    "TestNG.AlertTest.confirmDismissTest.executor": "Run",
-    "TestNG.AlertTest.executor": "Debug",
-    "TestNG.AlertTest.processDataProvider.executor": "Run",
-    "TestNG.AlertTest.promtDataProvider.executor": "Run",
-    "TestNG.AlertTest.testAlerts.executor": "Run",
-    "TestNG.CookieDelete.checkCookeis.executor": "Run",
-    "TestNG.TestForCheckLoginAndPasswordNegative.checkLoginPage.executor": "Run",
-    "TestNG.TestForCheckLoginAndPasswordNegative.checkMissingUser.executor": "Run",
-    "TestNG.TestForCheckLoginAndPasswordNegative.executor": "Run",
-    "TestNG.TestForCheckLoginAndPasswordPositive.checkLogin.executor": "Run",
-    "TestNG.TestForCheckLoginAndPasswordPositive.checkLoginForm.executor": "Run",
-    "TestNG.TestForCheckLoginAndPasswordPositive.executor": "Run",
-    "TestNG.clickBtnByJS.alertTest.executor": "Run",
-    "TestNG.clickBtnByJS.clickJsAlert.executor": "Run",
-    "TestNG.clickBtnByJS.confirmMiTest.executor": "Run",
-    "TestNG.clickBtnByJS.disMissTest.executor": "Run",
-    "TestNG.clickBtnByJS.jsPrompt.executor": "Run",
-    "TestNG.clickBtnByJS.jsPromt.executor": "Run",
-    "TestNG.clickBtnByJS.testAlerts.executor": "Run",
-    "TestNG.executeJSEvent.alertTest.executor": "Run",
-    "TestNG.executeJSEvent.confirmAlert.executor": "Run",
-    "TestNG.executeJSEvent.confirmDismissTest.executor": "Run",
-    "TestNG.executeJSEvent.executor": "Run",
-    "TestNG.executeJSEvent.processDataProvider.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "C:/Users/Alexander/IdeaProjects/Portfolio_Qa_Automation_Hilel/src/test/java",
-    "last_opened_file_path": "C:/Users/Alexander/IdeaProjects/Portfolio_Qa_Automation_Hilel/target",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15620641",
-    "project.structure.side.proportion": "0.44533947",
-    "settings.editor.selected.configurable": "project.propCompiler",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.SelenideExamples.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestHillel.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestHillel.requestForConsultation.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.AlertTest (1).executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.AlertTest.ConfirmDismissTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AlertTest.alertTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AlertTest.confirmAcceptTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AlertTest.confirmDismissTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AlertTest.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.AlertTest.processDataProvider.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AlertTest.promtDataProvider.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AlertTest.testAlerts.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CookieDelete.checkCookeis.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestForCheckLoginAndPasswordNegative.checkLoginPage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestForCheckLoginAndPasswordNegative.checkMissingUser.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestForCheckLoginAndPasswordNegative.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestForCheckLoginAndPasswordPositive.checkLogin.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestForCheckLoginAndPasswordPositive.checkLoginForm.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestForCheckLoginAndPasswordPositive.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.clickBtnByJS.alertTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.clickBtnByJS.clickJsAlert.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.clickBtnByJS.confirmMiTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.clickBtnByJS.disMissTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.clickBtnByJS.jsPrompt.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.clickBtnByJS.jsPromt.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.clickBtnByJS.testAlerts.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.executeJSEvent.alertTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.executeJSEvent.confirmAlert.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.executeJSEvent.confirmDismissTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.executeJSEvent.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.executeJSEvent.processDataProvider.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/Alexander/IdeaProjects/Portfolio_Qa_Automation_Hilel/src/test/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alexander/IdeaProjects/Portfolio_Qa_Automation_Hilel/target&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15620641&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.44533947&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="BaseTest" />
@@ -128,23 +153,8 @@
       <recent name="driverManager" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestForCheckLoginAndPasswordNegative.checkLoginPage">
-    <configuration name="SelenideExamples" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Portfolio_Qa_Automation_Hilel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="PageObject.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="PageObject" />
-      <option name="MAIN_CLASS_NAME" value="PageObject.SelenideExamples" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CookieDelete.checkCookeis" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestHillel.requestForConsultation">
+    <configuration name="TestHillel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Portfolio_Qa_Automation_Hilel" />
       <extension name="coverage">
         <pattern>
@@ -153,11 +163,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="BaseTest" />
-      <option name="MAIN_CLASS_NAME" value="BaseTest.CookieDelete" />
-      <option name="METHOD_NAME" value="checkCookeis" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
+      <option name="MAIN_CLASS_NAME" value="BaseTest.TestHillel" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestHillel.requestForConsultation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Portfolio_Qa_Automation_Hilel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BaseTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BaseTest" />
+      <option name="MAIN_CLASS_NAME" value="BaseTest.TestHillel" />
+      <option name="METHOD_NAME" value="requestForConsultation" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -217,17 +240,18 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestHillel.requestForConsultation" />
+        <item itemvalue="TestNG.TestForCheckLoginAndPasswordPositive.checkLoginForm" />
+        <item itemvalue="JUnit.TestHillel" />
         <item itemvalue="TestNG.TestForCheckLoginAndPasswordNegative.checkLoginPage" />
         <item itemvalue="TestNG.TestForCheckLoginAndPasswordNegative" />
-        <item itemvalue="JUnit.SelenideExamples" />
-        <item itemvalue="TestNG.CookieDelete.checkCookeis" />
-        <item itemvalue="TestNG.TestForCheckLoginAndPasswordPositive.checkLoginForm" />
       </list>
     </recent_temporary>
   </component>
   <component name="SeleniumInternalSettingsState">
-    <option name="lastFrameworkName" value="FluentLenium" />
+    <option name="lastFrameworkName" value="Selenide" />
     <option name="lastLanguageId" value="JAVA" />
+    <option name="lastUrl" value="https://ithillel.ua/ru?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=g&amp;utm_content=642444578119&amp;utm_term=&amp;gad_source=1&amp;gclid=Cj0KCQjwhtWvBhD9ARIsAOP0GojIuCD-oGeqOAWOQpLwtSrS9NWnfgEcWjpqZEG8vojECx9ngBo8ESUaAk4bEALw_wcB" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -276,7 +300,12 @@
       <workItem from="1710277449532" duration="599000" />
       <workItem from="1710542225294" duration="5000" />
       <workItem from="1710542377087" duration="10662000" />
-      <workItem from="1710616094651" duration="8077000" />
+      <workItem from="1710616094651" duration="9988000" />
+      <workItem from="1710707326667" duration="4828000" />
+      <workItem from="1710795566529" duration="7306000" />
+      <workItem from="1710876351923" duration="13268000" />
+      <workItem from="1710941864988" duration="4522000" />
+      <workItem from="1710977084804" duration="626000" />
     </task>
     <task id="LOCAL-00001" summary="Pull">
       <created>1707861555676</created>
@@ -356,7 +385,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710626901766</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Correct++">
+      <option name="closed" value="true" />
+      <created>1710627428577</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1710627428577</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Correct++">
+      <option name="closed" value="true" />
+      <created>1710627443501</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1710627443501</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,14 +437,29 @@
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/BaseTest/BaseTest.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="38" />
+          <url>file://$PROJECT_DIR$/src/test/java/BaseTest/TestForCheckLoginAndPasswordNegative.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/BaseTest/TestForCheckLoginAndPasswordNegative.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="39" />
+          <url>file://$PROJECT_DIR$/src/test/java/BaseTest/TestHillel.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/BaseTest/TestHillel.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/BaseTest/TestHillel.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/BaseTest/TestHillel.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/clickBtnByJS.java</url>
