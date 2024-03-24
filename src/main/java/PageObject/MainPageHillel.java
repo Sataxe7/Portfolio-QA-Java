@@ -2,8 +2,6 @@ package PageObject;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
 
 import static com.codeborne.selenide.Selenide.*;
 
@@ -17,6 +15,14 @@ public class MainPageHillel{
 
     private SelenideElement btnConsutltation() {
         return $x("//button[@id='btn-consultation-hero']");
+    }
+    private SelenideElement btnForLogInAndReg() {
+        return $x("// *[@href='https://lms.ithillel.ua'] [1]");
+    }
+    @Step("Click button to Log in")
+    public  RegistatioPage clickByBtnLogInAndReg() {
+        btnForLogInAndReg().click();
+        return page(RegistatioPage.class);
     }
 @Step ("Click on Button consultation Page")
     public ConsultationPage clickByConsultationBtn() {
