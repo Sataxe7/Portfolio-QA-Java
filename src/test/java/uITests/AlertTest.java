@@ -1,4 +1,4 @@
-package BaseTest;
+package uITests;
 
 import Enums.AlertsButtons;
 import PageObject.AlertPage;

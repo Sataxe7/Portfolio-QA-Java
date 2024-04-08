@@ -1,14 +1,11 @@
-package BaseTest;
+package uITests;
 
 import driverManager.WebDriverFactory;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 
 
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 
 public class BaseTest {
     protected static WebDriver driver;

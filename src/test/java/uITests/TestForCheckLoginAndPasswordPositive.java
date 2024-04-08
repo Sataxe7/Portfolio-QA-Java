@@ -1,4 +1,4 @@
-package BaseTest;
+package uITests;
 
 import PageObject.LoginPasswordPage;
 import org.testng.Assert;

@@ -1,7 +1,6 @@
-package BaseTest;
+package uITests;
 
 import PageObject.LoginPasswordPage;
-import org.apache.hc.client5.http.cookie.SetCookie;
 import org.openqa.selenium.Cookie;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;

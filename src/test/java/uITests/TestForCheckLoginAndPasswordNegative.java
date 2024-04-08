@@ -1,4 +1,4 @@
-package BaseTest;
+package uITests;
 
 import driverManager.Listener;
 import io.qameta.allure.Description;

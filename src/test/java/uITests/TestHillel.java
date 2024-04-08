@@ -1,4 +1,4 @@
-package BaseTest;
+package uITests;
 
 import PageObject.ConsultationPage;
 import PageObject.MainPageHillel;
