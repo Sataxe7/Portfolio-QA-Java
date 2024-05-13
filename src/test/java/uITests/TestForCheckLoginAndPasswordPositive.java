@@ -1,11 +1,12 @@
 package uITests;
 
-import PageObject.LoginPasswordPage;
+import ui.LoginPasswordPage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import static PageObject.LoginPasswordPage.*;
+import static ui.LoginPasswordPage.EXPECTEDURL;
+import static ui.LoginPasswordPage.LOGINPAGEURL;
 
 public class TestForCheckLoginAndPasswordPositive extends BaseTest {
 

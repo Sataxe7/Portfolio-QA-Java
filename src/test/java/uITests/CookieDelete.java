@@ -1,6 +1,6 @@
 package uITests;
 
-import PageObject.LoginPasswordPage;
+import ui.LoginPasswordPage;
 import org.openqa.selenium.Cookie;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 
 import java.util.Set;
 
-import static PageObject.LoginPasswordPage.EXPECTEDURL;
-import static PageObject.LoginPasswordPage.LOGINPAGEURL;
+import static ui.LoginPasswordPage.EXPECTEDURL;
+import static ui.LoginPasswordPage.LOGINPAGEURL;
 
 public class CookieDelete extends TestForCheckLoginAndPasswordPositive {
 

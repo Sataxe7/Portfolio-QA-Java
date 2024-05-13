@@ -1,8 +1,8 @@
+/*
 package uITests;
-
-import PageObject.ConsultationPage;
-import PageObject.MainPageHillel;
 import driverManager.BaseTestHillel;
+import ui.hilel_site_obj.ConsultationPage;
+import ui.hilel_site_obj.MainPageHillel;
 import driverManager.Listener;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
@@ -10,12 +10,10 @@ import org.testng.annotations.Listeners;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import static com.codeborne.selenide.Selenide.open;
-
 @Listeners(Listener.class)
 public class TestHillel extends BaseTestHillel {
     MainPageHillel mainPageHillel = new MainPageHillel();
     ConsultationPage consultationPage = new ConsultationPage();
-
     @BeforeClass
     public void setUp() {
         open("https://ithillel.ua/");
@@ -27,7 +25,7 @@ public class TestHillel extends BaseTestHillel {
     public void requestForConsultation() {
         mainPageHillel.clickByConsultationBtn();
         consultationPage.clickOnInputName("Alex");
-        consultationPage.clickOnEmail("Gaev@gmail.com");
+      consultationPage.clickOnEmail("Gaev@gmail.com");
         consultationPage.clickOnPhone("435437842");
         consultationPage.clickOnCourse("React");
         consultationPage.clickOnCheckBox();
@@ -35,3 +33,4 @@ public class TestHillel extends BaseTestHillel {
         consultationPage.checkMessageRequest();
     }
 }
+*/

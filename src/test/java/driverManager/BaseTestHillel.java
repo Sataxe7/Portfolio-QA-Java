@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static driverManager.SetUp.setUp;
 public class BaseTestHillel {
     @BeforeClass
-    public void setpBrowser() {
+    public void setUp() {
         setUp();
     }
 

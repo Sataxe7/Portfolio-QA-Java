@@ -1,4 +1,5 @@
-import uITests.AlertTest;
+package uITests;
+
 import Enums.AlertsButtons;
 import PageObject.AlertPage;
 import driverManager.DriverManager;

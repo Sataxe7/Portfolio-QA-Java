@@ -2,7 +2,7 @@ package uITests;
 
 import Enums.AlertsButtons;
 import PageObject.AlertPage;
-import PageObject.MainPage;
+import ui.hilel_site_obj.MainPage;
 import driverManager.DriverManager;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
