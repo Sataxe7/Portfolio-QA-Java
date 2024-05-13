@@ -4,40 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="998ac32d-8d2d-4130-a2b1-8614c56b1445" name="Changes" comment="Correct++ 08 04">
+    <list default="true" id="998ac32d-8d2d-4130-a2b1-8614c56b1445" name="Changes" comment="Correct++ 13.05">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/ConsultationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/hilel_site_obj/ConsultationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/LoginPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/LoginPasswordPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/hilel_site_obj/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/MainPageHillel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/hilel_site_obj/MainPageHillel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/driverManager/BaseTestHillel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/driverManager/BaseTestHillel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/driverManager/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/driverManager/Listener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/clickBtnByJS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/executeJSEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/executeJSEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/AlertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/AlertTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/CookieDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/CookieDelete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/TestForCheckLoginAndPasswordPositive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/TestForCheckLoginAndPasswordPositive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/TestHillel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/TestHillel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/allure.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/executor.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Enums/AlertsButtons.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Enums/AlertsButtons.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObject/AlertPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObject/AlertPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObject/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObject/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObject/ConsultationPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObject/LoginPasswordPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObject/MainPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObject/MainPageHillel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/BaseTestHillel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/Browsers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverManager/Browsers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/DriverManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverManager/DriverManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/Listener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/SetUp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverManager/SetUp$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/SetUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverManager/SetUp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/WebDriverFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverManager/WebDriverFactory$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/WebDriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverManager/WebDriverFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/clickBtnByJS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/executeJSEvent.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,10 +136,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15620641",
     "project.structure.side.proportion": "0.6864407",
-    "settings.editor.selected.configurable": "editor.preferences.gutterIcons",
+    "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -300,6 +269,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="TestNG.Assigning_An_Issue_.Assigning_An_Issue" />
       <item itemvalue="TestNG.TestHillel" />
       <item itemvalue="TestNG.TestHillel.requestForConsultation" />
       <item itemvalue="TestNG.AlertTest" />
@@ -530,7 +500,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712580845663</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Correct++ 13.05">
+      <option name="closed" value="true" />
+      <created>1715559893958</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1715559893958</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,7 +534,8 @@
     <MESSAGE value="Correct_" />
     <MESSAGE value="Correct++" />
     <MESSAGE value="Correct++ 08 04" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correct++ 08 04" />
+    <MESSAGE value="Correct++ 13.05" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correct++ 13.05" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -680,6 +659,10 @@
         <watch expression="expectedOutput" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Portfolio_Qa_Automation_Hilel$Assigning_An_Issue__Assigning_An_Issue__1_.ic" NAME="Assigning_An_Issue_.Assigning_An_Issue (1) Coverage Results" MODIFIED="1715380343192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
