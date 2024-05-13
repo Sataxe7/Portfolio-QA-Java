@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="998ac32d-8d2d-4130-a2b1-8614c56b1445" name="Changes" comment="Correct++ 13.05">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/hilel_site_obj/MainPageHillel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/hilel_site_obj/MainPageHillel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Enums/AlertsButtons.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Enums/AlertsButtons.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObject/AlertPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObject/AlertPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObject/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObject/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/Browsers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverManager/Browsers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/DriverManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverManager/DriverManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/SetUp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverManager/SetUp$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/SetUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverManager/SetUp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/WebDriverFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverManager/WebDriverFactory$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/WebDriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverManager/WebDriverFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,6 +152,7 @@
       <recent name="BaseTest" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alexander\IdeaProjects\Portfolio_Qa_Automation_Hilel\src\test\resources\test_suite" />
       <recent name="C:\Users\Alexander\IdeaProjects\Portfolio_Qa_Automation_Hilel\target\allure-results" />
       <recent name="C:\Users\Alexander\IdeaProjects\Portfolio_Qa_Automation_Hilel\target" />
     </key>
@@ -516,7 +509,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715559893958</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Correct++ 13.05">
+      <option name="closed" value="true" />
+      <created>1715638061918</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1715638061918</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
