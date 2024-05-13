@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="998ac32d-8d2d-4130-a2b1-8614c56b1445" name="Changes" comment="Correct++ 13.05">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/hilel_site_obj/MainPageHillel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/hilel_site_obj/MainPageHillel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Enums/AlertsButtons.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Enums/AlertsButtons.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObject/AlertPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObject/AlertPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObject/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObject/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/Browsers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverManager/Browsers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/DriverManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverManager/DriverManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/SetUp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverManager/SetUp$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/SetUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverManager/SetUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/WebDriverFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverManager/WebDriverFactory$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/WebDriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverManager/WebDriverFactory.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +144,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15620641",
     "project.structure.side.proportion": "0.6864407",
     "settings.editor.selected.configurable": "MavenSettings",
@@ -588,7 +596,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java</url>
           <line>35</line>
-          <properties class="uITests.clickBtnByJS">
+          <properties class="uITests.clickBtnByJS" method="disMissTest">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -597,7 +605,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/executeJSEvent.java</url>
           <line>42</line>
-          <properties class="uITests.executeJSEvent" method="processDataProvider">
+          <properties class="uITests.executeJSEvent">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -624,7 +632,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/api/PojoTests/pojo/PostComment.java</url>
           <line>21</line>
-          <properties class="api.PojoTests.pojo.PostComment" method="PostComment">
+          <properties class="api.PojoTests.pojo.PostComment">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -642,7 +650,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/api/PojoTests/pojo/ApiPostIssue.java</url>
           <line>19</line>
-          <properties class="api.PojoTests.pojo.ApiPostIssue" method="apiPostIssue">
+          <properties class="api.PojoTests.pojo.ApiPostIssue">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
