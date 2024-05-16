@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="998ac32d-8d2d-4130-a2b1-8614c56b1445" name="Changes" comment="Correct++ 13.05" />
+    <list default="true" id="998ac32d-8d2d-4130-a2b1-8614c56b1445" name="Changes" comment="Correct++ 13.05">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,6 +110,7 @@
     "TestNG.clickBtnByJS.clickJsAlert.executor": "Run",
     "TestNG.clickBtnByJS.confirmMiTest.executor": "Run",
     "TestNG.clickBtnByJS.disMissTest.executor": "Run",
+    "TestNG.clickBtnByJS.executor": "Run",
     "TestNG.clickBtnByJS.jsPrompt.executor": "Run",
     "TestNG.clickBtnByJS.jsPromt.executor": "Run",
     "TestNG.clickBtnByJS.testAlerts.executor": "Run",
@@ -160,7 +163,7 @@
       <recent name="driverManager" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestHillel.requestForConsultation">
+  <component name="RunManager" selected="TestNG.TestForCheckLoginAndPasswordNegative">
     <configuration name="AlertTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Portfolio_Qa_Automation_Hilel" />
       <extension name="coverage">
@@ -178,60 +181,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Assigning_An_Issue_" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Portfolio_Qa_Automation_Hilel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api.PojoTests.pojo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="api.PojoTests" />
-      <option name="MAIN_CLASS_NAME" value="api.PojoTests.pojo.Assigning_An_Issue_" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Assigning_An_Issue_.Assigning_An_Issue (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Portfolio_Qa_Automation_Hilel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api.PojoTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="api.PojoTests" />
-      <option name="MAIN_CLASS_NAME" value="api.PojoTests.Assigning_An_Issue_" />
-      <option name="METHOD_NAME" value="Assigning_An_Issue" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Assigning_An_Issue_.Assigning_An_Issue" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Portfolio_Qa_Automation_Hilel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api.PojoTests.pojo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="api.PojoTests" />
-      <option name="MAIN_CLASS_NAME" value="api.PojoTests.pojo.Assigning_An_Issue_" />
-      <option name="METHOD_NAME" value="Assigning_An_Issue" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestHillel" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestForCheckLoginAndPasswordNegative" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Portfolio_Qa_Automation_Hilel" />
       <extension name="coverage">
         <pattern>
@@ -240,7 +190,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="uITests" />
-      <option name="MAIN_CLASS_NAME" value="uITests.TestHillel" />
+      <option name="MAIN_CLASS_NAME" value="uITests.TestForCheckLoginAndPasswordNegative" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -248,7 +198,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestHillel.requestForConsultation" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="clickBtnByJS.clickJsAlert" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Portfolio_Qa_Automation_Hilel" />
       <extension name="coverage">
         <pattern>
@@ -257,8 +207,44 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="uITests" />
-      <option name="MAIN_CLASS_NAME" value="uITests.TestHillel" />
-      <option name="METHOD_NAME" value="requestForConsultation" />
+      <option name="MAIN_CLASS_NAME" value="uITests.clickBtnByJS" />
+      <option name="METHOD_NAME" value="clickJsAlert" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="clickBtnByJS.confirmMiTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Portfolio_Qa_Automation_Hilel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uITests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uITests" />
+      <option name="MAIN_CLASS_NAME" value="uITests.clickBtnByJS" />
+      <option name="METHOD_NAME" value="confirmMiTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="clickBtnByJS.disMissTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Portfolio_Qa_Automation_Hilel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uITests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uITests" />
+      <option name="MAIN_CLASS_NAME" value="uITests.clickBtnByJS" />
+      <option name="METHOD_NAME" value="disMissTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -267,20 +253,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.Assigning_An_Issue_.Assigning_An_Issue" />
-      <item itemvalue="TestNG.TestHillel" />
-      <item itemvalue="TestNG.TestHillel.requestForConsultation" />
+      <item itemvalue="TestNG.TestForCheckLoginAndPasswordNegative" />
+      <item itemvalue="TestNG.clickBtnByJS.clickJsAlert" />
+      <item itemvalue="TestNG.clickBtnByJS.confirmMiTest" />
+      <item itemvalue="TestNG.clickBtnByJS.disMissTest" />
       <item itemvalue="TestNG.AlertTest" />
-      <item itemvalue="TestNG.Assigning_An_Issue_" />
-      <item itemvalue="TestNG.Assigning_An_Issue_.Assigning_An_Issue (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestHillel.requestForConsultation" />
-        <item itemvalue="TestNG.TestHillel" />
+        <item itemvalue="TestNG.TestForCheckLoginAndPasswordNegative" />
+        <item itemvalue="TestNG.clickBtnByJS.confirmMiTest" />
+        <item itemvalue="TestNG.clickBtnByJS.disMissTest" />
+        <item itemvalue="TestNG.clickBtnByJS.clickJsAlert" />
         <item itemvalue="TestNG.AlertTest" />
-        <item itemvalue="TestNG.Assigning_An_Issue_" />
-        <item itemvalue="TestNG.Assigning_An_Issue_.Assigning_An_Issue (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -599,6 +584,11 @@
           <line>18</line>
           <option name="timeStamp" value="99" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/uITests/AlertTest.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java</url>
           <line>35</line>
@@ -611,7 +601,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/executeJSEvent.java</url>
           <line>42</line>
-          <properties class="uITests.executeJSEvent">
+          <properties class="uITests.executeJSEvent" method="processDataProvider">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
