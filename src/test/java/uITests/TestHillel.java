@@ -1,4 +1,3 @@
-/*
 package uITests;
 import driverManager.BaseTestHillel;
 import ui.hilel_site_obj.ConsultationPage;
@@ -33,4 +32,3 @@ public class TestHillel extends BaseTestHillel {
         consultationPage.checkMessageRequest();
     }
 }
-*/

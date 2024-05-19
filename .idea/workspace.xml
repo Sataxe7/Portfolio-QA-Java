@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="998ac32d-8d2d-4130-a2b1-8614c56b1445" name="Changes" comment="Correct++ 13.05">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/TestHillel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/TestHillel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +137,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.15620641",
     "project.structure.side.proportion": "0.6864407",
     "settings.editor.selected.configurable": "MavenSettings",
@@ -163,18 +164,19 @@
       <recent name="driverManager" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestForCheckLoginAndPasswordNegative">
-    <configuration name="AlertTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.clickBtnByJS.clickJsAlert">
+    <configuration name="CookieDelete.checkCookeis" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Portfolio_Qa_Automation_Hilel" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="driverManager.*" />
+          <option name="PATTERN" value="uITests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="uITests" />
-      <option name="MAIN_CLASS_NAME" value="uITests.AlertTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="uITests.CookieDelete" />
+      <option name="METHOD_NAME" value="checkCookeis" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -216,7 +218,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="clickBtnByJS.confirmMiTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="executeJSEvent.alertTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Portfolio_Qa_Automation_Hilel" />
       <extension name="coverage">
         <pattern>
@@ -225,8 +227,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="uITests" />
-      <option name="MAIN_CLASS_NAME" value="uITests.clickBtnByJS" />
-      <option name="METHOD_NAME" value="confirmMiTest" />
+      <option name="MAIN_CLASS_NAME" value="uITests.executeJSEvent" />
+      <option name="METHOD_NAME" value="alertTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -234,7 +236,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="clickBtnByJS.disMissTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="executeJSEvent.confirmDismissTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Portfolio_Qa_Automation_Hilel" />
       <extension name="coverage">
         <pattern>
@@ -243,8 +245,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="uITests" />
-      <option name="MAIN_CLASS_NAME" value="uITests.clickBtnByJS" />
-      <option name="METHOD_NAME" value="disMissTest" />
+      <option name="MAIN_CLASS_NAME" value="uITests.executeJSEvent" />
+      <option name="METHOD_NAME" value="confirmDismissTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -253,19 +255,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="TestNG.CookieDelete.checkCookeis" />
+      <item itemvalue="TestNG.executeJSEvent.alertTest" />
+      <item itemvalue="TestNG.executeJSEvent.confirmDismissTest" />
       <item itemvalue="TestNG.TestForCheckLoginAndPasswordNegative" />
       <item itemvalue="TestNG.clickBtnByJS.clickJsAlert" />
-      <item itemvalue="TestNG.clickBtnByJS.confirmMiTest" />
-      <item itemvalue="TestNG.clickBtnByJS.disMissTest" />
-      <item itemvalue="TestNG.AlertTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestForCheckLoginAndPasswordNegative" />
-        <item itemvalue="TestNG.clickBtnByJS.confirmMiTest" />
-        <item itemvalue="TestNG.clickBtnByJS.disMissTest" />
         <item itemvalue="TestNG.clickBtnByJS.clickJsAlert" />
-        <item itemvalue="TestNG.AlertTest" />
+        <item itemvalue="TestNG.CookieDelete.checkCookeis" />
+        <item itemvalue="TestNG.executeJSEvent.confirmDismissTest" />
+        <item itemvalue="TestNG.executeJSEvent.alertTest" />
+        <item itemvalue="TestNG.TestForCheckLoginAndPasswordNegative" />
       </list>
     </recent_temporary>
   </component>
@@ -543,11 +545,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java</url>
           <line>54</line>
           <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/uITests/TestForCheckLoginAndPasswordNegative.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/HilelTests/TestHillelRegistration.java</url>
