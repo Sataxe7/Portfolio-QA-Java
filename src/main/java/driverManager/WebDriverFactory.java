@@ -3,14 +3,15 @@ package driverManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 import java.util.concurrent.TimeUnit;
-
 
 public class WebDriverFactory {
     protected static WebDriver driver;
 
-    protected  WebDriverFactory() {
+    protected WebDriverFactory() {
     }
 
     public static WebDriver initDriver(Browsers browser) {
@@ -18,39 +19,47 @@ public class WebDriverFactory {
             case CHROME: {
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
-                driver.manage().window().maximize();
-                driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-                driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-                return driver;
+                break;
             }
             case FIREFOX: {
                 WebDriverManager.firefoxdriver().setup();
-                return driver;
+                driver = new FirefoxDriver();
+                break;
             }
             case EDGE: {
                 WebDriverManager.edgedriver().setup();
-                return driver;
+                driver = new EdgeDriver();
+                break;
             }
-
+            default: {
+                throw new IllegalArgumentException("This browser is not supported");
+            }
         }
-        return null;
+        if (driver != null) {
+            driver.manage().window().maximize();
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+        }
+        return driver;
     }
-    public  static WebDriver initDriver() {
-        String browserName=System.getProperty("browserName","chrome");
+
+    public static WebDriver initDriver() {
+        String browserName = System.getProperty("browserName", "chrome");
         try {
             return initDriver(Browsers.valueOf(browserName.toUpperCase()));
         } catch (IllegalArgumentException e) {
-            System.out.println(Browsers.valueOf(browserName.toUpperCase()));
-            System.out.println("this browser is not supported ");
+            System.out.println("This browser is not supported: " + browserName);
             System.exit(-1);
         }
         return null;
     }
+
     public static void quitDriver() {
         if (driver != null) {
+            System.out.println("Quitting driver");
             driver.quit();
             driver = null;
+            System.out.println("Driver quit and set to null");
+        }
+    }
 }
-}
-}
-
