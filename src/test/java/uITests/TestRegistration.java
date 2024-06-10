@@ -1,6 +1,7 @@
 package uITests;
 
 
+import driverManager.BaseTestHillel;
 import ui.hilel_site_obj.MainPage;
 
 import ui.malinator_service.MailinatorMainPage;
@@ -18,7 +19,7 @@ import static ui.page_object.PasswordPage.PASSWORD;
 import static ui.page_object.RecommendationsPage.recommendationsPageUrl;
 
 
-public class TestRegistration extends BaseTest {
+public class TestRegistration extends BaseTestHilel {
 
    ManePage manePage = new ManePage();
     MailinatorMainPage mailinatorMainPage = new MailinatorMainPage();

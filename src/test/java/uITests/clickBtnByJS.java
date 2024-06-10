@@ -3,11 +3,16 @@ package uITests;
 import Enums.AlertsButtons;
 import PageObject.AlertPage;
 import driverManager.DriverManager;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import java.time.Duration;
 
 import static PageObject.AlertPage.*;
 
@@ -24,6 +29,7 @@ public class clickBtnByJS extends AlertTest {
 
     @Test
     public void clickJsAlert () throws InterruptedException {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
         mainPage.clickOnAlertJsExecutor("javascript_alerts");
         AlertPage.clickBtnByJs(AlertsButtons.ALERT);
@@ -35,17 +41,22 @@ public class clickBtnByJS extends AlertTest {
 
     @Test
     public void disMissTest() throws InterruptedException {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
         mainPage.clickOnAlertJsExecutor("javascript_alerts");
+        wait.until(ExpectedConditions.elementToBeClickable(By.id("confirmButtonId")));
         AlertPage.clickBtnByJs(AlertsButtons.CONFIRM);
         Assert.assertEquals(alertPage.switchToAlertAndGetTextByJs(false), CANCEL_TEXT);
         Assert.assertEquals(alertPage.getResultText(), "You clicked: Cancel");
     }
 @Test
     public void confirmMiTest() throws InterruptedException {
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
         mainPage.clickOnAlertJsExecutor("javascript_alerts");
+    wait.until(ExpectedConditions.elementToBeClickable(By.id("confirmButtonId")));
         AlertPage.clickBtnByJs(AlertsButtons.CONFIRM);
+    wait.until(ExpectedConditions.alertIsPresent());
         Assert.assertEquals(alertPage.switchToAlertAndGetTextByJs(true), CANCEL_TEXT);
         Assert.assertEquals(alertPage.getResultText(), "You clicked: Ok");
 
@@ -54,6 +65,7 @@ public class clickBtnByJS extends AlertTest {
 
     @Test(dataProvider = "Providersd")
     public void jsPrompt(boolean confirm, String input, String expected) throws InterruptedException {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         // Assuming driver and mainPage are initialized
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
         mainPage.clickOnAlertJsExecutor("javascript_alerts");
