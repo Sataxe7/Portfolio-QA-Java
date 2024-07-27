@@ -29,7 +29,7 @@ public class CookieDelete extends TestForCheckLoginAndPasswordPositive {
         loginPasswordPage.selectLogin("tomsmith");
         loginPasswordPage.selectPassword("SuperSecretPassword!");
         loginPasswordPage.selectButtonLogIn();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         wait.until(ExpectedConditions.urlToBe(EXPECTEDURL));
         currentUrl = driver.getCurrentUrl();
         Assert.assertEquals(currentUrl, EXPECTEDURL);

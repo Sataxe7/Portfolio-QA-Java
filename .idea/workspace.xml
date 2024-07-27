@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="998ac32d-8d2d-4130-a2b1-8614c56b1445" name="Changes" comment="Correct++ 27.07">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/AlertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/AlertTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/TestForCheckLoginAndPasswordPositive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/TestForCheckLoginAndPasswordPositive.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,8 +86,8 @@
     "TestNG.AlertTest.alertTest.executor": "Run",
     "TestNG.AlertTest.confirmAcceptTest.executor": "Run",
     "TestNG.AlertTest.confirmDismissTest.executor": "Run",
-    "TestNG.AlertTest.executor": "Run",
-    "TestNG.AlertTest.processDataProvider.executor": "Run",
+    "TestNG.AlertTest.executor": "Debug",
+    "TestNG.AlertTest.processDataProvider.executor": "Debug",
     "TestNG.AlertTest.promtDataProvider.executor": "Run",
     "TestNG.AlertTest.testAlerts.executor": "Run",
     "TestNG.ApiPostIssue.apiPostIssue.executor": "Run",
@@ -178,44 +180,8 @@
       <recent name="driverManager" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestCreateIssueWthisPOJO.testCreatIssueWthisPOJO">
-    <configuration name="TestCreateIssueWthisPOJO.testCreatIssueWthisPOJO" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Portfolio_Qa_Automation_Hilel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jira.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="jira" />
-      <option name="MAIN_CLASS_NAME" value="jira.TestCreateIssueWthisPOJO" />
-      <option name="METHOD_NAME" value="testCreatIssueWthisPOJO" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestCreateIssue.testCreateIssue" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Portfolio_Qa_Automation_Hilel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jira.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="jira" />
-      <option name="MAIN_CLASS_NAME" value="jira.TestCreateIssue" />
-      <option name="METHOD_NAME" value="testCreateIssue" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestForCheckLoginAndPasswordNegative" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.CookieDelete.checkCookeis">
+    <configuration name="AlertTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Portfolio_Qa_Automation_Hilel" />
       <extension name="coverage">
         <pattern>
@@ -224,7 +190,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="uITests" />
-      <option name="MAIN_CLASS_NAME" value="uITests.TestForCheckLoginAndPasswordNegative" />
+      <option name="MAIN_CLASS_NAME" value="uITests.AlertTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -232,7 +198,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestForCheckLoginAndPasswordPositive.checkLoginForm" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AlertTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Portfolio_Qa_Automation_Hilel" />
       <extension name="coverage">
         <pattern>
@@ -241,8 +207,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="uITests" />
-      <option name="MAIN_CLASS_NAME" value="uITests.TestForCheckLoginAndPasswordPositive" />
-      <option name="METHOD_NAME" value="checkLoginForm" />
+      <option name="MAIN_CLASS_NAME" value="uITests.AlertTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlertTest.confirmDismissTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Portfolio_Qa_Automation_Hilel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uITests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uITests" />
+      <option name="MAIN_CLASS_NAME" value="uITests.AlertTest" />
+      <option name="METHOD_NAME" value="confirmDismissTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -250,7 +233,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestHillel.requestForConsultation (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AlertTest.processDataProvider" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Portfolio_Qa_Automation_Hilel" />
       <extension name="coverage">
         <pattern>
@@ -259,8 +242,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="uITests" />
-      <option name="MAIN_CLASS_NAME" value="uITests.TestHillel" />
-      <option name="METHOD_NAME" value="requestForConsultation" />
+      <option name="MAIN_CLASS_NAME" value="uITests.AlertTest" />
+      <option name="METHOD_NAME" value="processDataProvider" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CookieDelete.checkCookeis" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Portfolio_Qa_Automation_Hilel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uITests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uITests" />
+      <option name="MAIN_CLASS_NAME" value="uITests.CookieDelete" />
+      <option name="METHOD_NAME" value="checkCookeis" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -269,19 +270,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.TestCreateIssue.testCreateIssue" />
-      <item itemvalue="TestNG.TestCreateIssueWthisPOJO.testCreatIssueWthisPOJO" />
-      <item itemvalue="TestNG.TestForCheckLoginAndPasswordNegative" />
-      <item itemvalue="TestNG.TestForCheckLoginAndPasswordPositive.checkLoginForm" />
-      <item itemvalue="TestNG.TestHillel.requestForConsultation (1)" />
+      <item itemvalue="TestNG.AlertTest" />
+      <item itemvalue="TestNG.AlertTest (1)" />
+      <item itemvalue="TestNG.AlertTest.confirmDismissTest" />
+      <item itemvalue="TestNG.AlertTest.processDataProvider" />
+      <item itemvalue="TestNG.CookieDelete.checkCookeis" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestCreateIssueWthisPOJO.testCreatIssueWthisPOJO" />
-        <item itemvalue="TestNG.TestCreateIssue.testCreateIssue" />
-        <item itemvalue="TestNG.TestForCheckLoginAndPasswordNegative" />
-        <item itemvalue="TestNG.TestForCheckLoginAndPasswordPositive.checkLoginForm" />
-        <item itemvalue="TestNG.TestHillel.requestForConsultation (1)" />
+        <item itemvalue="TestNG.CookieDelete.checkCookeis" />
+        <item itemvalue="TestNG.AlertTest.processDataProvider" />
+        <item itemvalue="TestNG.AlertTest (1)" />
+        <item itemvalue="TestNG.AlertTest" />
+        <item itemvalue="TestNG.AlertTest.confirmDismissTest" />
       </list>
     </recent_temporary>
   </component>
@@ -563,7 +564,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722083899877</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Correct++ 27.07">
+      <option name="closed" value="true" />
+      <created>1722089893390</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1722089893390</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,31 +659,6 @@
           <option name="timeStamp" value="105" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/uITests/TestRegistration.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="106" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/uITests/TestRegistration.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="107" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/uITests/TestRegistration.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="108" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/uITests/TestRegistration.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="109" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/uITests/TestRegistration.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="110" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/TestForCheckLoginAndPasswordPositive.java</url>
           <line>24</line>
           <option name="timeStamp" value="111" />
@@ -683,6 +667,41 @@
           <url>file://$PROJECT_DIR$/src/test/java/jira/TestCreateIssue.java</url>
           <line>14</line>
           <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/uITests/AlertTest.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/uITests/AlertTest.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/uITests/AlertTest.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/uITests/AlertTest.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/uITests/AlertTest.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/uITests/AlertTest.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/uITests/AlertTest.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="126" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java</url>
@@ -748,15 +767,6 @@
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/uITests/CookieDelete.java</url>
-          <line>27</line>
-          <properties class="uITests.CookieDelete" method="checkCookeis">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="104" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/jira/TestCreateIssue.java</url>
           <line>13</line>
           <properties class="jira.TestCreateIssue" method="testCreateIssue">
@@ -764,6 +774,24 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/uITests/AlertTest.java</url>
+          <line>35</line>
+          <properties class="uITests.AlertTest" method="alertTest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/uITests/AlertTest.java</url>
+          <line>57</line>
+          <properties class="uITests.AlertTest" method="processDataProvider">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="117" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.StackOverflowError" package="java.lang" />

@@ -26,21 +26,18 @@ public class AlertTest extends BaseTest {
 
     @BeforeClass
     public void setOn() {
-        setUpBrowser();
         openUrl("https://the-internet.herokuapp.com/");
         mainPage = new MainPage(driver);
         alertPage = new AlertPage(driver);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));  // Initialize WebDriverWait with 10 seconds timeout
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
     @Test
     public void alertTest() throws InterruptedException {
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
         mainPage.clickOnAlert();
-
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Click for JS Alert']")));  // Add wait
         alertPage.clickOnBtn(AlertsButtons.ALERT.getTEXT_ON_BUTTON());
-
         Assert.assertEquals(alertPage.switchToAlertAndGetText(true), ALERT_TEXT);
         Assert.assertEquals(alertPage.getResultText(), "You successfully clicked an alert");
     }
@@ -79,9 +76,10 @@ public class AlertTest extends BaseTest {
                 {false, "You entered", "You entered: null"}
         };
     }
+        @AfterMethod
+        public void tearDown() {
+            driver.navigate().back();
 
-    @AfterMethod
-    public void backdriver() {
-        DriverManager.getDriver().navigate().back();
+
+        }
     }
-}

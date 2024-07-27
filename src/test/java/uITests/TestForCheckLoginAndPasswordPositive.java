@@ -24,7 +24,6 @@ public class TestForCheckLoginAndPasswordPositive extends BaseTest {
 
     @Test
     public void checkLoginForm() {
-
         loginPasswordPage.selectLogin("tomsmith");
         loginPasswordPage.selectPassword("SuperSecretPassword!");
         loginPasswordPage.selectButtonLogIn();
@@ -36,7 +35,7 @@ public class TestForCheckLoginAndPasswordPositive extends BaseTest {
         Assert.assertEquals(LOGINPAGEURL, currentUrl, "Failed Redirect");
 
         Assert.assertEquals(loginPasswordPage.verifyTooltipText(), "You logged out of the secure area!", "Text isnt expectable");
-        tearDown();
+
 
 
     }
