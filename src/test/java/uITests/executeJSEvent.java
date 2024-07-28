@@ -3,12 +3,17 @@ package uITests;
 import Enums.AlertsButtons;
 import PageObject.AlertPage;
 import driverManager.DriverManager;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
+
 import static PageObject.AlertPage.*;
+import static ui.LoginPasswordPage.EXPECTEDURL;
 
 public class executeJSEvent extends AlertTest {
     @Test
@@ -23,6 +28,7 @@ public class executeJSEvent extends AlertTest {
     @Test
     public void confirmDismissTest() throws InterruptedException {
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         mainPage.clickOnAlertJsExecutor("javascript_alerts");
         AlertPage.executeJsEvent(AlertsButtons.CONFIRM);
         Assert.assertEquals(alertPage.switchToAlertAndGetText(false), CANCEL_TEXT);

@@ -1,9 +1,12 @@
 package uITests;
 
+import org.openqa.selenium.support.ui.WebDriverWait;
 import ui.LoginPasswordPage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import java.time.Duration;
 
 import static ui.LoginPasswordPage.EXPECTEDURL;
 import static ui.LoginPasswordPage.LOGINPAGEURL;
@@ -27,6 +30,7 @@ public class TestForCheckLoginAndPasswordPositive extends BaseTest {
         loginPasswordPage.selectLogin("tomsmith");
         loginPasswordPage.selectPassword("SuperSecretPassword!");
         loginPasswordPage.selectButtonLogIn();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         currentUrl = driver.getCurrentUrl();
         Assert.assertEquals(currentUrl, EXPECTEDURL, "Failed");
         Assert.assertEquals(loginPasswordPage.verifyTooltipText(), "You logged into a secure area!");

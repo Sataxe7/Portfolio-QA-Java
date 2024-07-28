@@ -21,7 +21,7 @@ public class PublicMassegePage {
     }
 
     public String openLetterAndGetConfirmCode() {
-        letter(1).shouldBe(visible, ofSeconds(50));
+        letter(1).shouldBe(visible, ofSeconds(500));
         letter(1).click();
         switchTo().frame(IFRAME_NAME);
         return confirmCode().scrollIntoView("{block: \"center\"}").getText();

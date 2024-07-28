@@ -21,8 +21,6 @@ public class TestRegistration extends BaseTestHilel {
     private String mail = CommonMethods.randomMail();
     private String confirmCod;
 
-    public TestRegistration() {
-    }
 
     @Test
     public void testRegistration() {

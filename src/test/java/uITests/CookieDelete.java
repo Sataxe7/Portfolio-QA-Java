@@ -1,6 +1,7 @@
 package uITests;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import ui.LoginPasswordPage;
@@ -26,31 +27,48 @@ public class CookieDelete extends TestForCheckLoginAndPasswordPositive {
 
     @Test
     public void checkCookeis() {
+        // Создаем объект WebDriverWait
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
+        // Выполняем логин
         loginPasswordPage.selectLogin("tomsmith");
         loginPasswordPage.selectPassword("SuperSecretPassword!");
         loginPasswordPage.selectButtonLogIn();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
+        // Явное ожидание изменения URL после логина
         wait.until(ExpectedConditions.urlToBe(EXPECTEDURL));
         currentUrl = driver.getCurrentUrl();
-        Assert.assertEquals(currentUrl, EXPECTEDURL);
-        Assert.assertEquals(loginPasswordPage.verifyTooltipText(), "You logged into a secure area!");
-        Set <Cookie> cookies = driver.manage().getCookies();
+        Assert.assertEquals(currentUrl, EXPECTEDURL, "Failed to navigate to the secure area after login.");
+
+        // Явное ожидание появления текста тултипа
+        WebElement tooltipElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("flash")));
+        Assert.assertEquals(loginPasswordPage.verifyTooltipText(), "You logged into a secure area!", "Tooltip text is incorrect after login.");
+
+        // Получаем и печатаем cookies
+        Set<Cookie> cookies = driver.manage().getCookies();
         for (Cookie cookie : cookies) {
             System.out.println(cookie.getName() + " " + cookie.getValue() + " " + cookie.getExpiry());
         }
-          driver.manage().deleteAllCookies();
-        Set <Cookie> remainingCookies = driver.manage().getCookies();
+
+        // Удаляем все cookies
+        driver.manage().deleteAllCookies();
+
+        // Явное ожидание, что cookies будут удалены
+        wait.until(driver -> driver.manage().getCookies().isEmpty());
+
+        // Проверяем количество оставшихся cookies
+        Set<Cookie> remainingCookies = driver.manage().getCookies();
         System.out.println("Number of remaining cookies after deletion: " + remainingCookies.size());
-        Assert.assertEquals(remainingCookies.size(), 0, "Expected all cookies to be deleted");
+        Assert.assertEquals(remainingCookies.size(), 0, "Expected all cookies to be deleted.");
+
+        // Обновляем страницу
         driver.navigate().refresh();
-        Assert.assertEquals(loginPasswordPage.verifyTooltipText(),"You must login to view the secure area!");
 
-        }
-
-            }
-
-
-
+        // Явное ожидание появления текста тултипа после обновления страницы
+        tooltipElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("flash")));
+        Assert.assertEquals(loginPasswordPage.verifyTooltipText(), "You must login to view the secure area!", "Tooltip text is incorrect after refresh.");
+    }
+}
 
 
 

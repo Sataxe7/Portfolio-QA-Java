@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="998ac32d-8d2d-4130-a2b1-8614c56b1445" name="Changes" comment="Correct++ 28.07">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/LoginPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/LoginPasswordPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/AlertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/AlertTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/malinator_service/PublicMassegePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/malinator_service/PublicMassegePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/TestForCheckLoginAndPasswordPositive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/TestForCheckLoginAndPasswordPositive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/TestRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/TestRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/executeJSEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/executeJSEvent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +99,7 @@
     "TestNG.Assigning_An_Issue_.Assigning_An_Issue.executor": "Run",
     "TestNG.Assigning_An_Issue_.executor": "Run",
     "TestNG.CookieDelete.checkCookeis.executor": "Run",
+    "TestNG.CookieDelete.executor": "Run",
     "TestNG.PostComment.PostComment.executor": "Run",
     "TestNG.PostComment.executor": "Run",
     "TestNG.TestCreateIssue.testCreateIssue.executor": "Run",
@@ -182,8 +183,8 @@
       <recent name="driverManager" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.clickBtnByJS.clickJsAlert">
-    <configuration name="AlertTest.confirmDismissTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestForCheckLoginAndPasswordPositive">
+    <configuration name="CookieDelete" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Portfolio_Qa_Automation_Hilel" />
       <extension name="coverage">
         <pattern>
@@ -192,16 +193,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="uITests" />
-      <option name="MAIN_CLASS_NAME" value="uITests.AlertTest" />
-      <option name="METHOD_NAME" value="confirmDismissTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="uITests.CookieDelete" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AlertTest.processDataProvider" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestForCheckLoginAndPasswordPositive" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Portfolio_Qa_Automation_Hilel" />
       <extension name="coverage">
         <pattern>
@@ -210,8 +210,42 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="uITests" />
-      <option name="MAIN_CLASS_NAME" value="uITests.AlertTest" />
-      <option name="METHOD_NAME" value="processDataProvider" />
+      <option name="MAIN_CLASS_NAME" value="uITests.TestForCheckLoginAndPasswordPositive" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRegistration" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Portfolio_Qa_Automation_Hilel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uITests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uITests" />
+      <option name="MAIN_CLASS_NAME" value="uITests.TestRegistration" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRegistration.testRegistration" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Portfolio_Qa_Automation_Hilel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uITests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uITests" />
+      <option name="MAIN_CLASS_NAME" value="uITests.TestRegistration" />
+      <option name="METHOD_NAME" value="testRegistration" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -237,56 +271,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="executeJSEvent.alertTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Portfolio_Qa_Automation_Hilel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uITests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uITests" />
-      <option name="MAIN_CLASS_NAME" value="uITests.executeJSEvent" />
-      <option name="METHOD_NAME" value="alertTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="executeJSEvent.processDataProvider" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Portfolio_Qa_Automation_Hilel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uITests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uITests" />
-      <option name="MAIN_CLASS_NAME" value="uITests.executeJSEvent" />
-      <option name="METHOD_NAME" value="processDataProvider" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="TestNG.CookieDelete" />
+      <item itemvalue="TestNG.TestForCheckLoginAndPasswordPositive" />
+      <item itemvalue="TestNG.TestRegistration" />
+      <item itemvalue="TestNG.TestRegistration.testRegistration" />
       <item itemvalue="TestNG.clickBtnByJS.clickJsAlert" />
-      <item itemvalue="TestNG.executeJSEvent.alertTest" />
-      <item itemvalue="TestNG.executeJSEvent.processDataProvider" />
-      <item itemvalue="TestNG.AlertTest.confirmDismissTest" />
-      <item itemvalue="TestNG.AlertTest.processDataProvider" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestForCheckLoginAndPasswordPositive" />
+        <item itemvalue="TestNG.CookieDelete" />
+        <item itemvalue="TestNG.TestRegistration" />
+        <item itemvalue="TestNG.TestRegistration.testRegistration" />
         <item itemvalue="TestNG.clickBtnByJS.clickJsAlert" />
-        <item itemvalue="TestNG.AlertTest.processDataProvider" />
-        <item itemvalue="TestNG.AlertTest.confirmDismissTest" />
-        <item itemvalue="TestNG.executeJSEvent.alertTest" />
-        <item itemvalue="TestNG.executeJSEvent.processDataProvider" />
       </list>
     </recent_temporary>
   </component>
@@ -592,7 +590,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722180029066</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Correct++ 28.07">
+      <option name="closed" value="true" />
+      <created>1722194566684</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1722194566684</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -671,7 +677,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/TestForCheckLoginAndPasswordPositive.java</url>
-          <line>24</line>
+          <line>27</line>
           <option name="timeStamp" value="111" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -689,6 +695,16 @@
           <line>62</line>
           <option name="timeStamp" value="126" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/uITests/TestRegistration.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/uITests/TestRegistration.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java</url>
           <line>36</line>
@@ -700,7 +716,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/executeJSEvent.java</url>
-          <line>42</line>
+          <line>48</line>
           <properties class="uITests.executeJSEvent" method="processDataProvider">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -709,7 +725,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/TestForCheckLoginAndPasswordPositive.java</url>
-          <line>25</line>
+          <line>28</line>
           <properties class="uITests.TestForCheckLoginAndPasswordPositive" method="checkLoginForm">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -790,7 +806,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/executeJSEvent.java</url>
-          <line>14</line>
+          <line>19</line>
           <properties class="uITests.executeJSEvent" method="alertTest">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
