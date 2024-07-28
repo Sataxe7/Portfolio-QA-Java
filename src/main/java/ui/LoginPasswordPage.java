@@ -46,8 +46,7 @@ public class LoginPasswordPage extends BasePage {
     }
 
     public void selectLogin(String login) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-        wait.until(ExpectedConditions.elementToBeClickable(loginForm()));
+
         driver.findElement(loginForm()).click();
         driver.findElement(loginForm()).sendKeys(login);
     }
