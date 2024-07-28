@@ -77,9 +77,10 @@ public class AlertTest extends BaseTest {
         };
     }
         @AfterMethod
-        public void tearDown() {
+        public  void back() {
             driver.navigate().back();
 
 
         }
     }
+

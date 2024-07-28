@@ -3,7 +3,9 @@ package uITests;
 import Enums.AlertsButtons;
 import PageObject.AlertPage;
 import driverManager.DriverManager;
+import driverManager.WebDriverFactory;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -19,17 +21,10 @@ import static PageObject.AlertPage.*;
 public class clickBtnByJS extends AlertTest {
 
 
-    @Override
-    @BeforeClass
-    public void setOn() {
-        super.setOn();
-
-    }
 
 
     @Test
     public void clickJsAlert () throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
         mainPage.clickOnAlertJsExecutor("javascript_alerts");
         AlertPage.clickBtnByJs(AlertsButtons.ALERT);
