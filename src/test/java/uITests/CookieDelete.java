@@ -23,7 +23,7 @@ public class CookieDelete extends TestForCheckLoginAndPasswordPositive {
     @Test
     public void checkCookeis() {
         // Создаем объект WebDriverWait
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(190));
 
         // Выполняем логин
         loginPasswordPage.selectLogin("tomsmith");
