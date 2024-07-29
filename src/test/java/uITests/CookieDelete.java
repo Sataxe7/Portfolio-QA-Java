@@ -18,12 +18,7 @@ import static ui.LoginPasswordPage.LOGINPAGEURL;
 
 public class CookieDelete extends TestForCheckLoginAndPasswordPositive {
 
-    @BeforeClass
-    public void setUp() {
-        openUrl(LOGINPAGEURL);
-        loginPasswordPage = new LoginPasswordPage(driver);
-        currentUrl = driver.getCurrentUrl();
-    }
+
 
     @Test
     public void checkCookeis() {
@@ -65,7 +60,7 @@ public class CookieDelete extends TestForCheckLoginAndPasswordPositive {
         driver.navigate().refresh();
 
         // Явное ожидание появления текста тултипа после обновления страницы
-        tooltipElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("flash")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("flash")));
         Assert.assertEquals(loginPasswordPage.verifyTooltipText(), "You must login to view the secure area!", "Tooltip text is incorrect after refresh.");
     }
 }
