@@ -31,7 +31,6 @@ public class CookieDelete extends TestForCheckLoginAndPasswordPositive {
         loginPasswordPage.selectButtonLogIn();
 
         // Явное ожидание изменения URL после логина
-        wait.until(ExpectedConditions.urlToBe(EXPECTEDURL));
         currentUrl = driver.getCurrentUrl();
         Assert.assertEquals(currentUrl, EXPECTEDURL, "Failed to navigate to the secure area after login.");
 

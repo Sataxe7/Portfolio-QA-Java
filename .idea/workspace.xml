@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="998ac32d-8d2d-4130-a2b1-8614c56b1445" name="Changes" comment="29.0777">
+    <list default="true" id="998ac32d-8d2d-4130-a2b1-8614c56b1445" name="Changes" comment="29.07772">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -626,7 +626,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722212375320</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="29.07772">
+      <option name="closed" value="true" />
+      <created>1722213311940</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1722213311940</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -661,7 +669,8 @@
     <MESSAGE value="29.07" />
     <MESSAGE value="29.077" />
     <MESSAGE value="29.0777" />
-    <option name="LAST_COMMIT_MESSAGE" value="29.0777" />
+    <MESSAGE value="29.07772" />
+    <option name="LAST_COMMIT_MESSAGE" value="29.07772" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
