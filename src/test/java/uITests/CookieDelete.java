@@ -27,7 +27,7 @@ public class CookieDelete extends TestForCheckLoginAndPasswordPositive {
 
         // Выполняем логин
         loginPasswordPage.selectLogin("tomsmith");
-        loginPasswordPage.selectPassword("SuperSecretPassword!");
+        loginPasswordPage.selectPassword("SuperSecretPassword!!!ііыыыs");
         loginPasswordPage.selectButtonLogIn();
 
         // Явное ожидание изменения URL после логина
