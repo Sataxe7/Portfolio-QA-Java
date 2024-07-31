@@ -1,5 +1,5 @@
 package uITests;
-import driverManager.BaseTestHillel;
+import driverManager.BaseTestHilel;
 import ui.hilel_site_obj.ConsultationPage;
 import ui.hilel_site_obj.MainPageHillel;
 import driverManager.Listener;
@@ -10,7 +10,7 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import static com.codeborne.selenide.Selenide.open;
 @Listeners(Listener.class)
-public class TestHillel extends BaseTestHillel {
+public class TestHillel extends BaseTestHilel {
     MainPageHillel mainPageHillel = new MainPageHillel();
     ConsultationPage consultationPage = new ConsultationPage();
     @BeforeClass

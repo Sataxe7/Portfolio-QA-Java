@@ -6,9 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="998ac32d-8d2d-4130-a2b1-8614c56b1445" name="Changes" comment="29.077722">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/malinator_service/PublicMassegePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/malinator_service/PublicMassegePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/driverManager/BaseTestHillel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/AlertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/AlertTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/BaseTestHilel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/driverManager/BaseTestHilel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/uITests/CookieDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/CookieDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/TestForCheckLoginAndPasswordPositive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/TestForCheckLoginAndPasswordPositive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/TestHillel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/TestHillel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/TestRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/TestRegistration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/uITests/executeJSEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/executeJSEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Enums/AlertsButtons.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Enums/AlertsButtons.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObject/AlertPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObject/AlertPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/Browsers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverManager/Browsers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/WebDriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverManager/WebDriverFactory.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +99,7 @@
     &quot;TestNG.AlertTest.alertTest.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.AlertTest.confirmAcceptTest.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.AlertTest.confirmDismissTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AlertTest.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.AlertTest.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.AlertTest.processDataProvider.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.AlertTest.promtDataProvider.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.AlertTest.testAlerts.executor&quot;: &quot;Run&quot;,
@@ -182,36 +194,18 @@
       <recent name="driverManager" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CookieDelete">
-    <configuration name="CookieDelete" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.AlertTest">
+    <configuration name="AlertTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Portfolio_Qa_Automation_Hilel" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uITests.*" />
+          <option name="PATTERN" value="driverManager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="uITests" />
-      <option name="MAIN_CLASS_NAME" value="uITests.CookieDelete" />
+      <option name="MAIN_CLASS_NAME" value="uITests.AlertTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CookieDelete.checkCookeis" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Portfolio_Qa_Automation_Hilel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uITests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uITests" />
-      <option name="MAIN_CLASS_NAME" value="uITests.CookieDelete" />
-      <option name="METHOD_NAME" value="checkCookeis" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -222,7 +216,7 @@
       <module name="Portfolio_Qa_Automation_Hilel" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uITests.*" />
+          <option name="PATTERN" value="driverManager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -235,18 +229,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestForCheckLoginAndPasswordPositive.checkLoginForm" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestHillel" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Portfolio_Qa_Automation_Hilel" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uITests.*" />
+          <option name="PATTERN" value="driverManager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="uITests" />
-      <option name="MAIN_CLASS_NAME" value="uITests.TestForCheckLoginAndPasswordPositive" />
-      <option name="METHOD_NAME" value="checkLoginForm" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="uITests.TestHillel" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -257,7 +250,7 @@
       <module name="Portfolio_Qa_Automation_Hilel" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uITests.*" />
+          <option name="PATTERN" value="driverManager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -270,19 +263,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="executeJSEvent" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Portfolio_Qa_Automation_Hilel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="driverManager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uITests" />
+      <option name="MAIN_CLASS_NAME" value="uITests.executeJSEvent" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="TestNG.CookieDelete.checkCookeis" />
-      <item itemvalue="TestNG.TestForCheckLoginAndPasswordPositive.checkLoginForm" />
-      <item itemvalue="TestNG.CookieDelete" />
+      <item itemvalue="TestNG.AlertTest" />
       <item itemvalue="TestNG.TestForCheckLoginAndPasswordPositive" />
+      <item itemvalue="TestNG.TestHillel" />
       <item itemvalue="TestNG.TestRegistration" />
+      <item itemvalue="TestNG.executeJSEvent" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CookieDelete" />
-        <item itemvalue="TestNG.TestForCheckLoginAndPasswordPositive.checkLoginForm" />
-        <item itemvalue="TestNG.CookieDelete.checkCookeis" />
+        <item itemvalue="TestNG.AlertTest" />
+        <item itemvalue="TestNG.TestHillel" />
         <item itemvalue="TestNG.TestForCheckLoginAndPasswordPositive" />
+        <item itemvalue="TestNG.executeJSEvent" />
         <item itemvalue="TestNG.TestRegistration" />
       </list>
     </recent_temporary>
@@ -693,7 +703,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722421179532</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="29.077722">
+      <option name="closed" value="true" />
+      <created>1722442650941</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1722442650941</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -737,7 +755,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java</url>
-          <line>61</line>
+          <line>62</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -777,7 +795,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/TestForCheckLoginAndPasswordPositive.java</url>
-          <line>27</line>
+          <line>29</line>
           <option name="timeStamp" value="111" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -786,42 +804,28 @@
           <option name="timeStamp" value="113" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/uITests/AlertTest.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="125" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/uITests/AlertTest.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="126" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/TestRegistration.java</url>
-          <line>26</line>
+          <line>28</line>
           <option name="timeStamp" value="134" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/uITests/TestRegistration.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="135" />
+          <url>file://$PROJECT_DIR$/src/test/java/uITests/TestForCheckLoginAndPasswordPositive.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/uITests/AlertTest.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="142" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java</url>
-          <line>37</line>
+          <line>43</line>
           <properties class="uITests.clickBtnByJS" method="disMissTest">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/uITests/executeJSEvent.java</url>
-          <line>50</line>
-          <properties class="uITests.executeJSEvent" method="processDataProvider">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/api/PojoTests/pojo/PostComment.java</url>
@@ -870,7 +874,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/AlertTest.java</url>
-          <line>35</line>
+          <line>33</line>
           <properties class="uITests.AlertTest" method="alertTest">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -878,22 +882,13 @@
           <option name="timeStamp" value="116" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/uITests/AlertTest.java</url>
-          <line>57</line>
-          <properties class="uITests.AlertTest" method="processDataProvider">
+          <url>file://$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java</url>
+          <line>35</line>
+          <properties class="uITests.clickBtnByJS" method="clickJsAlert">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="117" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/uITests/executeJSEvent.java</url>
-          <line>19</line>
-          <properties class="uITests.executeJSEvent" method="alertTest">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="132" />
+          <option name="timeStamp" value="141" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.StackOverflowError" package="java.lang" />

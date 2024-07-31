@@ -2,18 +2,18 @@
 package uITests;
 
 import com.codeborne.selenide.Selenide;
+import driverManager.BaseTestHilel;
 import driverManager.CommonMethods;
-import org.openqa.selenium.WebDriver;
+import driverManager.Listener;
 import org.openqa.selenium.WindowType;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import ui.malinator_service.MailinatorMainPage;
 import ui.page_object.ConfirmEmailPage;
 import ui.page_object.ManePage;
 import ui.page_object.RecommendationsPage;
 
-import java.time.Duration;
-
+@Listeners(Listener.class)
 public class TestRegistration extends BaseTestHilel {
     ManePage manePage = new ManePage();
     MailinatorMainPage mailinatorMainPage = new MailinatorMainPage();
@@ -24,6 +24,8 @@ public class TestRegistration extends BaseTestHilel {
 
     @Test
     public void testRegistration() {
+
+
         System.out.println(this.mail);
         Selenide.open("https://ithillel.ua/");
         this.manePage.clickByAuthPageBtn().checkFormLoginAndRegistrations().clickByRegistrationBtn().fillingRegistrationForm("Autotest", "Autotest").fillingPasswordInput("autotestHillel24", "autotestHillel24", "063032312", this.mail);

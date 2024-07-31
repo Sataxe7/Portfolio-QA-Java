@@ -3,23 +3,37 @@ package uITests;
 import Enums.AlertsButtons;
 import PageObject.AlertPage;
 import driverManager.DriverManager;
+import driverManager.Listener;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.ITestResult;
+import org.testng.annotations.*;
+import ui.hilel_site_obj.MainPage;
 
 import java.time.Duration;
 
 import static PageObject.AlertPage.*;
 import static ui.LoginPasswordPage.EXPECTEDURL;
+@Listeners(Listener.class)
+public class executeJSEvent extends BaseTest{
+    private MainPage mainPage;
+    private AlertPage alertPage;
+    private WebDriverWait wait;
 
-public class executeJSEvent extends AlertTest {
+    @BeforeMethod
+    public void setUp() {
+        openUrl("https://the-internet.herokuapp.com/");
+        mainPage = new MainPage(driver);
+        alertPage = new AlertPage(driver);
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    }
+
     @Test
+
     public void alertTest() throws InterruptedException {
         // Устанавливаем WebDriverWait с таймаутом в 10 секунд
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 
         // Прокручиваем страницу до элемента футера и кликаем по ссылке на страницу с алертами
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
@@ -37,7 +51,7 @@ public class executeJSEvent extends AlertTest {
 
     @Test
     public void confirmDismissTest() throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
         mainPage.clickOnAlertJsExecutor("javascript_alerts");
         AlertPage.executeJsEvent(AlertsButtons.CONFIRM);
@@ -46,7 +60,7 @@ public class executeJSEvent extends AlertTest {
     }
     @Test
     public void confirmAlert() throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
         mainPage.clickOnAlertJsExecutor("javascript_alerts");
         AlertPage.executeJsEvent(AlertsButtons.CONFIRM);
@@ -55,11 +69,10 @@ public class executeJSEvent extends AlertTest {
     }
 
 
-    int dataindex = 0;
 
     @Test(dataProvider = "Providers")
     public void processDataProvider(boolean confirm, String input, String expectedOutput) throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
         mainPage.clickOnAlertJsExecutor("javascript_alerts");
         AlertPage.executeJsEvent(AlertsButtons.PROMPT);
@@ -80,7 +93,15 @@ public class executeJSEvent extends AlertTest {
     }
 
     @AfterMethod
-    public void backdriver () {
-        DriverManager.getDriver().navigate().back();
+
+        public void cleanUp(ITestResult result) {
+            // Use this check to ensure `back()` is called only for data-driven tests
+            if (result.getMethod().getMethodName().equals("jsPrompt")) {
+                driver.navigate().back();
+            }
+        }
     }
-}
+
+
+
+

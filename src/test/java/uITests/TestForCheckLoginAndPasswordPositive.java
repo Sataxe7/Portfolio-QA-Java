@@ -1,6 +1,8 @@
 package uITests;
 
+import driverManager.Listener;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Listeners;
 import ui.LoginPasswordPage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -10,7 +12,7 @@ import java.time.Duration;
 
 import static ui.LoginPasswordPage.EXPECTEDURL;
 import static ui.LoginPasswordPage.LOGINPAGEURL;
-
+@Listeners(Listener.class)
 public class TestForCheckLoginAndPasswordPositive extends BaseTest {
 
     LoginPasswordPage loginPasswordPage;

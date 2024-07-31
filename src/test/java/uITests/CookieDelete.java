@@ -1,9 +1,11 @@
 package uITests;
 
+import driverManager.Listener;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Listeners;
 import ui.LoginPasswordPage;
 import org.openqa.selenium.Cookie;
 import org.testng.Assert;
@@ -15,14 +17,14 @@ import java.util.Set;
 
 import static ui.LoginPasswordPage.EXPECTEDURL;
 import static ui.LoginPasswordPage.LOGINPAGEURL;
-
+@Listeners(Listener.class)
 public class CookieDelete extends TestForCheckLoginAndPasswordPositive {
 
 
 
     @Test
     public void checkCookeis() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         // Выполняем логин
         loginPasswordPage.selectLogin("tomsmith");
