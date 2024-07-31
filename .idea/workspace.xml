@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="998ac32d-8d2d-4130-a2b1-8614c56b1445" name="Changes" comment="29.077722">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/CookieDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/CookieDelete.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +179,7 @@
       <recent name="driverManager" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CookieDelete.checkCookeis">
+  <component name="RunManager" selected="TestNG.TestForCheckLoginAndPasswordPositive.checkLoginForm">
     <configuration name="CookieDelete" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Portfolio_Qa_Automation_Hilel" />
       <extension name="coverage">
@@ -277,9 +276,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestForCheckLoginAndPasswordPositive.checkLoginForm" />
         <item itemvalue="TestNG.CookieDelete.checkCookeis" />
         <item itemvalue="TestNG.TestForCheckLoginAndPasswordPositive" />
-        <item itemvalue="TestNG.TestForCheckLoginAndPasswordPositive.checkLoginForm" />
         <item itemvalue="TestNG.CookieDelete" />
         <item itemvalue="TestNG.TestRegistration" />
       </list>
@@ -643,7 +642,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722354389162</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="29.077722">
+      <option name="closed" value="true" />
+      <created>1722376384197</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1722376384197</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
