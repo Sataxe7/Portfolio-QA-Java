@@ -22,25 +22,21 @@ public class CookieDelete extends TestForCheckLoginAndPasswordPositive {
 
     @Test
     public void checkCookeis() {
-        // Создаем объект WebDriverWait
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
         // Выполняем логин
         loginPasswordPage.selectLogin("tomsmith");
         loginPasswordPage.selectPassword("SuperSecretPassword!");
         loginPasswordPage.selectButtonLogIn();
 
-        // Явное ожидание изменения URL после логина
         wait.until(ExpectedConditions.urlToBe(EXPECTEDURL));
         currentUrl = driver.getCurrentUrl();
 
         Assert.assertEquals(currentUrl, EXPECTEDURL, "Failed to navigate to the secure area after login.");
 
-        // Явное ожидание появления текста тултипа
         WebElement tooltipElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("flash")));
         Assert.assertEquals(loginPasswordPage.verifyTooltipText(), "You logged into a secure area!", "Tooltip text is incorrect after login.");
 
-        // Получаем и печатаем cookies
         Set<Cookie> cookies = driver.manage().getCookies();
         for (Cookie cookie : cookies) {
             System.out.println(cookie.getName() + " " + cookie.getValue() + " " + cookie.getExpiry());

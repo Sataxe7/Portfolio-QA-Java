@@ -18,15 +18,26 @@ import static ui.LoginPasswordPage.EXPECTEDURL;
 public class executeJSEvent extends AlertTest {
     @Test
     public void alertTest() throws InterruptedException {
+        // Устанавливаем WebDriverWait с таймаутом в 10 секунд
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+        // Прокручиваем страницу до элемента футера и кликаем по ссылке на страницу с алертами
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
-        mainPage.clickOnAlertJsExecutor("javascript_alerts");
-        AlertPage.clickBtnByJs(AlertsButtons.ALERT);
+        wait.until(ExpectedConditions.elementToBeClickable(mainPage.btnForLink("javascript_alerts"))).click();
+
+        // Переходим на страницу с алертами и нажимаем кнопку, вызывающую алерт
+        alertPage.clickBtnByJs(AlertsButtons.ALERT);
+
+        // Сравниваем текст алерта с ожидаемым
         Assert.assertEquals(alertPage.switchToAlertAndGetText(true), ALERT_TEXT);
+
+        // Проверяем, что результат действия на странице соответствует ожиданиям
         Assert.assertEquals(alertPage.getResultText(), "You successfully clicked an alert");
     }
 
     @Test
     public void confirmDismissTest() throws InterruptedException {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
         mainPage.clickOnAlertJsExecutor("javascript_alerts");
         AlertPage.executeJsEvent(AlertsButtons.CONFIRM);
@@ -35,6 +46,7 @@ public class executeJSEvent extends AlertTest {
     }
     @Test
     public void confirmAlert() throws InterruptedException {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
         mainPage.clickOnAlertJsExecutor("javascript_alerts");
         AlertPage.executeJsEvent(AlertsButtons.CONFIRM);
@@ -47,6 +59,7 @@ public class executeJSEvent extends AlertTest {
 
     @Test(dataProvider = "Providers")
     public void processDataProvider(boolean confirm, String input, String expectedOutput) throws InterruptedException {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
         mainPage.clickOnAlertJsExecutor("javascript_alerts");
         AlertPage.executeJsEvent(AlertsButtons.PROMPT);

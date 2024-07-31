@@ -25,6 +25,7 @@ public class clickBtnByJS extends AlertTest {
 
     @Test
     public void clickJsAlert () throws InterruptedException {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
         mainPage.clickOnAlertJsExecutor("javascript_alerts");
         AlertPage.clickBtnByJs(AlertsButtons.ALERT);
