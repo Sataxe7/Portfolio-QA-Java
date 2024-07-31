@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="998ac32d-8d2d-4130-a2b1-8614c56b1445" name="Changes" comment="29.077722">
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/CookieDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/CookieDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/executeJSEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/executeJSEvent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -674,7 +675,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722419057382</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="29.077722">
+      <option name="closed" value="true" />
+      <created>1722420072565</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1722420072565</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -802,7 +811,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/executeJSEvent.java</url>
-          <line>48</line>
+          <line>47</line>
           <properties class="uITests.executeJSEvent" method="processDataProvider">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

@@ -28,7 +28,6 @@ public class executeJSEvent extends AlertTest {
     @Test
     public void confirmDismissTest() throws InterruptedException {
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         mainPage.clickOnAlertJsExecutor("javascript_alerts");
         AlertPage.executeJsEvent(AlertsButtons.CONFIRM);
         Assert.assertEquals(alertPage.switchToAlertAndGetText(false), CANCEL_TEXT);
