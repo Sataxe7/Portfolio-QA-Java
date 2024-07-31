@@ -21,7 +21,7 @@ public class CookieDelete extends TestForCheckLoginAndPasswordPositive {
 
 
     @Test
-    public void checkCookeis() {
+    public void checkCookeis() throws InterruptedException {
         // Создаем объект WebDriverWait
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 
@@ -31,7 +31,7 @@ public class CookieDelete extends TestForCheckLoginAndPasswordPositive {
         loginPasswordPage.selectButtonLogIn();
 
         // Явное ожидание изменения URL после логина
-        wait.until(ExpectedConditions.urlToBe(EXPECTEDURL));
+       Thread.sleep(200);
         currentUrl = driver.getCurrentUrl();
 
         Assert.assertEquals(currentUrl, EXPECTEDURL, "Failed to navigate to the secure area after login.");
