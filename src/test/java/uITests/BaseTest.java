@@ -3,15 +3,13 @@ package uITests;
 import driverManager.Listener;
 import driverManager.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Listeners;
+import org.testng.annotations.*;
 
 @Listeners(Listener.class)
 public class BaseTest {
     protected static WebDriver driver;
 
-    @BeforeClass
+    @BeforeTest
     public static void setUpClass() {
         driver = WebDriverFactory.initDriver();
     }
@@ -20,7 +18,7 @@ public class BaseTest {
         driver.get(expectedUrl);
     }
 
-    @AfterClass
+    @AfterTest
     public static void tearDownClass() {
         if (driver != null) {
             driver.quit();

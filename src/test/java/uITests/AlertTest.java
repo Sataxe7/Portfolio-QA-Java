@@ -16,19 +16,21 @@ import org.testng.Assert;
 import java.time.Duration;
 
 import static PageObject.AlertPage.*;
+import static driverManager.DriverManager.getDriver;
+
 @Listeners(Listener.class)
 public class AlertTest extends BaseTest {
 
-    protected MainPage mainPage;
-    protected AlertPage alertPage;
-    private WebDriverWait wait;
+    MainPage mainPage;
+    AlertPage alertPage;
+    private static boolean isDataProviderTest;
 
-    @BeforeClass
+
+    @BeforeMethod
     public void setOn() {
         openUrl("https://the-internet.herokuapp.com/");
         mainPage = new MainPage(driver);
         alertPage = new AlertPage(driver);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
     @Test
@@ -44,24 +46,21 @@ public class AlertTest extends BaseTest {
     public void confirmDismissTest() throws InterruptedException {
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
         mainPage.clickOnAlert();
-
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Click for JS Confirm']")));  // Add wait
         alertPage.clickOnBtn(AlertsButtons.CONFIRM.getTEXT_ON_BUTTON());
-
         Assert.assertEquals(alertPage.switchToAlertAndGetText(false), CANCEL_TEXT);
         Assert.assertEquals(alertPage.getResultText(), "You clicked: Cancel");
     }
 
     @Test(dataProvider = "Providers")
     public void processDataProvider(boolean confirm, String input, String expectedOutput) throws InterruptedException {
+
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
         mainPage.clickOnAlert();
-
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Click for JS Prompt']")));  // Add wait
         alertPage.clickOnBtn(AlertsButtons.PROMPT.getTEXT_ON_BUTTON());
-
         Assert.assertEquals(alertPage.switchToAlertAndGetText(confirm, input), PROMT_TEXT);
         Assert.assertEquals(alertPage.getResultText(), expectedOutput);
+        isDataProviderTest = true;
+
     }
 
     @DataProvider(name = "Providers")
@@ -74,9 +73,15 @@ public class AlertTest extends BaseTest {
                 {false, "You entered", "You entered: null"}
         };
     }
-    @AfterMethod
-    public void backdriver () {
-        DriverManager.getDriver().navigate().back();
-    }
-}
 
+    @AfterMethod
+    public void backdriver() {
+        if (isDataProviderTest) {
+            driver.navigate().back();
+            // Сброс флага после выполнения
+            isDataProviderTest = false;
+
+        }
+    }
+
+}
