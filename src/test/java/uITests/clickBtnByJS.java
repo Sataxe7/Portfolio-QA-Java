@@ -18,8 +18,16 @@ import java.time.Duration;
 
 import static PageObject.AlertPage.*;
 @Listeners(Listener.class)
-public class clickBtnByJS extends AlertTest {
-
+public class clickBtnByJS extends BaseTest {
+    MainPage mainPage;
+    AlertPage alertPage;
+    private static boolean isDataProviderTest;
+    @BeforeMethod
+    public void setOn() {
+        openUrl("https://the-internet.herokuapp.com/");
+        mainPage = new MainPage(driver);
+        alertPage = new AlertPage(driver);
+    }
 
 
     @Test
@@ -49,7 +57,7 @@ public class clickBtnByJS extends AlertTest {
         Assert.assertEquals(alertPage.getResultText(), "You clicked: Ok");
     }
 
-    @Test(dataProvider = "Providersd")
+    @Test(dataProvider = "Providers")
     public void jsPrompt(boolean confirm, String input, String expected) throws InterruptedException {
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
         mainPage.clickOnAlertJsExecutor("javascript_alerts");
@@ -58,24 +66,37 @@ public class clickBtnByJS extends AlertTest {
         Assert.assertEquals(alertPage.getResultText(), expected);
     }
 
-    @DataProvider(name = "Providersd")
-    Object[][] checkDataProvider() {
+    @Test(dataProvider = "Providers")
+    public void processDataProvider(boolean confirm, String input, String expectedOutput) throws InterruptedException {
+
+        mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
+        mainPage.clickOnAlert();
+        alertPage.clickOnBtn(AlertsButtons.PROMPT.getTEXT_ON_BUTTON());
+        Assert.assertEquals(alertPage.switchToAlertAndGetText(confirm, input), PROMT_TEXT);
+        Assert.assertEquals(alertPage.getResultText(), expectedOutput);
+        isDataProviderTest = true;
+
+    }
+
+    @DataProvider(name = "Providers")
+    public Object[][] provideData() {
         return new Object[][]{
+                {true, "Some text", "You entered: Some text"},
                 {true, "Hello world", "You entered: Hello world"},
                 {false, "Hello world", "You entered: null"},
                 {true, "", "You entered:"},
-                {false, "", "You entered: null"}
+                {false, "You entered", "You entered: null"}
         };
     }
 
     @AfterMethod
-    public void cleanUp(ITestResult result) {
-        // Use this check to ensure `back()` is called only for data-driven tests
-        if (result.getMethod().getMethodName().equals("jsPrompt")) {
+    public void backdriver() {
+        if (isDataProviderTest) {
             driver.navigate().back();
+            // Сброс флага после выполнения
+            isDataProviderTest = false;
         }
     }
 }
-
 
 

@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="998ac32d-8d2d-4130-a2b1-8614c56b1445" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/AlertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/AlertTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/executeJSEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/executeJSEvent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +181,7 @@
       <recent name="driverManager" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AlertTest">
+  <component name="RunManager" selected="TestNG.executeJSEvent.alertTest">
     <configuration name="AlertTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Portfolio_Qa_Automation_Hilel" />
       <extension name="coverage">
@@ -199,7 +199,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AlertTest.alertTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="clickBtnByJS" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Portfolio_Qa_Automation_Hilel" />
       <extension name="coverage">
         <pattern>
@@ -208,16 +208,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="uITests" />
-      <option name="MAIN_CLASS_NAME" value="uITests.AlertTest" />
-      <option name="METHOD_NAME" value="alertTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="uITests.clickBtnByJS" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AlertTest.confirmDismissTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="clickBtnByJS.jsPrompt" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Portfolio_Qa_Automation_Hilel" />
       <extension name="coverage">
         <pattern>
@@ -226,26 +225,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="uITests" />
-      <option name="MAIN_CLASS_NAME" value="uITests.AlertTest" />
-      <option name="METHOD_NAME" value="confirmDismissTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AlertTest.processDataProvider" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Portfolio_Qa_Automation_Hilel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uITests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uITests" />
-      <option name="MAIN_CLASS_NAME" value="uITests.AlertTest" />
-      <option name="METHOD_NAME" value="processDataProvider" />
+      <option name="MAIN_CLASS_NAME" value="uITests.clickBtnByJS" />
+      <option name="METHOD_NAME" value="jsPrompt" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -270,20 +251,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="executeJSEvent.alertTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Portfolio_Qa_Automation_Hilel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uITests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uITests" />
+      <option name="MAIN_CLASS_NAME" value="uITests.executeJSEvent" />
+      <option name="METHOD_NAME" value="alertTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="TestNG.AlertTest.alertTest" />
-      <item itemvalue="TestNG.AlertTest.confirmDismissTest" />
-      <item itemvalue="TestNG.AlertTest.processDataProvider" />
+      <item itemvalue="TestNG.clickBtnByJS" />
+      <item itemvalue="TestNG.clickBtnByJS.jsPrompt" />
+      <item itemvalue="TestNG.executeJSEvent.alertTest" />
       <item itemvalue="TestNG.AlertTest" />
       <item itemvalue="TestNG.executeJSEvent" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AlertTest" />
-        <item itemvalue="TestNG.AlertTest.alertTest" />
-        <item itemvalue="TestNG.AlertTest.processDataProvider" />
-        <item itemvalue="TestNG.AlertTest.confirmDismissTest" />
+        <item itemvalue="TestNG.executeJSEvent.alertTest" />
         <item itemvalue="TestNG.executeJSEvent" />
+        <item itemvalue="TestNG.clickBtnByJS.jsPrompt" />
+        <item itemvalue="TestNG.clickBtnByJS" />
+        <item itemvalue="TestNG.AlertTest" />
       </list>
     </recent_temporary>
   </component>
@@ -741,7 +740,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722514962383</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="29.077722">
+      <option name="closed" value="true" />
+      <created>1722521666532</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1722521666532</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -785,7 +792,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java</url>
-          <line>51</line>
+          <line>59</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -843,9 +850,19 @@
           <line>16</line>
           <option name="timeStamp" value="140" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/uITests/AlertTest.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="145" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="146" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java</url>
-          <line>33</line>
+          <line>41</line>
           <properties class="uITests.clickBtnByJS" method="disMissTest">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -899,7 +916,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java</url>
-          <line>25</line>
+          <line>33</line>
           <properties class="uITests.clickBtnByJS" method="clickJsAlert">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

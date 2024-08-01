@@ -16,15 +16,25 @@ import java.time.Duration;
 import static PageObject.AlertPage.*;
 import static ui.LoginPasswordPage.EXPECTEDURL;
 @Listeners(Listener.class)
-public class executeJSEvent extends AlertTest{
+public class executeJSEvent extends BaseTest {
+    MainPage mainPage;
+    AlertPage alertPage;
+    private static boolean isDataProviderTest;
 
 
+    @BeforeMethod
+    public void setOn() {
+        openUrl("https://the-internet.herokuapp.com/");
+        mainPage = new MainPage(driver);
+        alertPage = new AlertPage(driver);
+    }
+@Test
     public void alertTest() throws InterruptedException {
         // Устанавливаем WebDriverWait с таймаутом в 10 секунд
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 
         // Прокручиваем страницу до элемента футера и кликаем по ссылке на страницу с алертами
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
+    mainPage.clickOnAlertJsExecutor("javascript_alerts");
         // Переходим на страницу с алертами и нажимаем кнопку, вызывающую алерт
         alertPage.clickBtnByJs(AlertsButtons.ALERT);
 
@@ -58,13 +68,12 @@ public class executeJSEvent extends AlertTest{
 
     @Test(dataProvider = "Providers")
     public void processDataProvider(boolean confirm, String input, String expectedOutput) throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
         mainPage.clickOnAlertJsExecutor("javascript_alerts");
         AlertPage.executeJsEvent(AlertsButtons.PROMPT);
         Assert.assertEquals(alertPage.switchToAlertAndGetText(confirm, input),PROMT_TEXT);
         Assert.assertEquals(alertPage.getResultText(), expectedOutput);
-
+        isDataProviderTest = true;
     }
 
     @DataProvider(name = "Providers")
@@ -79,14 +88,15 @@ public class executeJSEvent extends AlertTest{
     }
 
     @AfterMethod
-
-        public void cleanUp(ITestResult result) {
-            // Use this check to ensure `back()` is called only for data-driven tests
-            if (result.getMethod().getMethodName().equals("processDataProvider")) {
-                driver.navigate().back();
-            }
+    public void backdriver() {
+        if (isDataProviderTest) {
+            driver.navigate().back();
+            // Сброс флага после выполнения
+            isDataProviderTest = false;
         }
     }
+}
+
 
 
 
