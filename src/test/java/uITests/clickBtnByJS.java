@@ -64,20 +64,9 @@ public class clickBtnByJS extends BaseTest {
         AlertPage.clickBtnByJs(AlertsButtons.PROMPT);
         Assert.assertEquals(alertPage.switchToAlertAndGetText(confirm, input), PROMT_TEXT);
         Assert.assertEquals(alertPage.getResultText(), expected);
-    }
-
-    @Test(dataProvider = "Providers")
-    public void processDataProvider(boolean confirm, String input, String expectedOutput) throws InterruptedException {
-
-        mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
-        mainPage.clickOnAlert();
-        alertPage.clickOnBtn(AlertsButtons.PROMPT.getTEXT_ON_BUTTON());
-        Assert.assertEquals(alertPage.switchToAlertAndGetText(confirm, input), PROMT_TEXT);
-        Assert.assertEquals(alertPage.getResultText(), expectedOutput);
         isDataProviderTest = true;
-
     }
-
+    
     @DataProvider(name = "Providers")
     public Object[][] provideData() {
         return new Object[][]{

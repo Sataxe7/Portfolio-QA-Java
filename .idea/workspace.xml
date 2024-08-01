@@ -7,7 +7,6 @@
     <list default="true" id="998ac32d-8d2d-4130-a2b1-8614c56b1445" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/executeJSEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/executeJSEvent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,17 +180,17 @@
       <recent name="driverManager" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.executeJSEvent.alertTest">
-    <configuration name="AlertTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.clickBtnByJS">
+    <configuration name="TestForCheckLoginAndPasswordPositive" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Portfolio_Qa_Automation_Hilel" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="driverManager.*" />
+          <option name="PATTERN" value="uITests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="uITests" />
-      <option name="MAIN_CLASS_NAME" value="uITests.AlertTest" />
+      <option name="MAIN_CLASS_NAME" value="uITests.TestForCheckLoginAndPasswordPositive" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -270,19 +269,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="TestNG.TestForCheckLoginAndPasswordPositive" />
       <item itemvalue="TestNG.clickBtnByJS" />
       <item itemvalue="TestNG.clickBtnByJS.jsPrompt" />
       <item itemvalue="TestNG.executeJSEvent.alertTest" />
-      <item itemvalue="TestNG.AlertTest" />
       <item itemvalue="TestNG.executeJSEvent" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.executeJSEvent.alertTest" />
-        <item itemvalue="TestNG.executeJSEvent" />
-        <item itemvalue="TestNG.clickBtnByJS.jsPrompt" />
         <item itemvalue="TestNG.clickBtnByJS" />
-        <item itemvalue="TestNG.AlertTest" />
+        <item itemvalue="TestNG.executeJSEvent" />
+        <item itemvalue="TestNG.TestForCheckLoginAndPasswordPositive" />
+        <item itemvalue="TestNG.executeJSEvent.alertTest" />
+        <item itemvalue="TestNG.clickBtnByJS.jsPrompt" />
       </list>
     </recent_temporary>
   </component>
@@ -748,7 +747,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722521666532</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="29.077722">
+      <option name="closed" value="true" />
+      <created>1722523940720</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1722523940720</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -846,11 +853,6 @@
           <option name="timeStamp" value="134" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/uITests/TestForCheckLoginAndPasswordPositive.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="140" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/AlertTest.java</url>
           <line>37</line>
           <option name="timeStamp" value="145" />
@@ -859,6 +861,16 @@
           <url>file://$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java</url>
           <line>20</line>
           <option name="timeStamp" value="146" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/uITests/TestForCheckLoginAndPasswordPositive.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="148" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java</url>
