@@ -18,19 +18,9 @@ import java.time.Duration;
 
 import static PageObject.AlertPage.*;
 @Listeners(Listener.class)
-public class clickBtnByJS extends BaseTest {
+public class clickBtnByJS extends AlertTest {
 
-    private MainPage mainPage;
-    private AlertPage alertPage;
-    private WebDriverWait wait;
 
-    @BeforeMethod
-    public void setUp() {
-        openUrl("https://the-internet.herokuapp.com/");
-        mainPage = new MainPage(driver);
-        alertPage = new AlertPage(driver);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-    }
 
     @Test
     public void clickJsAlert() throws InterruptedException {
@@ -55,7 +45,6 @@ public class clickBtnByJS extends BaseTest {
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
         mainPage.clickOnAlertJsExecutor("javascript_alerts");
         AlertPage.clickBtnByJs(AlertsButtons.CONFIRM);
-        wait.until(ExpectedConditions.alertIsPresent());
         Assert.assertEquals(alertPage.switchToAlertAndGetTextByJs(true), CANCEL_TEXT);
         Assert.assertEquals(alertPage.getResultText(), "You clicked: Ok");
     }

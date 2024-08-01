@@ -23,7 +23,7 @@ public class AlertTest extends BaseTest {
     protected AlertPage alertPage;
     private WebDriverWait wait;
 
-    @BeforeMethod
+    @BeforeClass
     public void setOn() {
         openUrl("https://the-internet.herokuapp.com/");
         mainPage = new MainPage(driver);
@@ -35,7 +35,6 @@ public class AlertTest extends BaseTest {
     public void alertTest() throws InterruptedException {
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
         mainPage.clickOnAlert();
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Click for JS Alert']")));  // Add wait
         alertPage.clickOnBtn(AlertsButtons.ALERT.getTEXT_ON_BUTTON());
         Assert.assertEquals(alertPage.switchToAlertAndGetText(true), ALERT_TEXT);
         Assert.assertEquals(alertPage.getResultText(), "You successfully clicked an alert");
@@ -76,11 +75,8 @@ public class AlertTest extends BaseTest {
         };
     }
     @AfterMethod
-    public void cleanUp(ITestResult result) {
-        // Use this check to ensure `back()` is called only for data-driven tests
-        if (result.getMethod().getMethodName().equals("processDataProvider")) {
-            driver.navigate().back();
-        }
+    public void backdriver () {
+        DriverManager.getDriver().navigate().back();
     }
 }
 

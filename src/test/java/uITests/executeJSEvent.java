@@ -16,20 +16,8 @@ import java.time.Duration;
 import static PageObject.AlertPage.*;
 import static ui.LoginPasswordPage.EXPECTEDURL;
 @Listeners(Listener.class)
-public class executeJSEvent extends BaseTest{
-    private MainPage mainPage;
-    private AlertPage alertPage;
-    private WebDriverWait wait;
+public class executeJSEvent extends AlertTest{
 
-    @BeforeMethod
-    public void setUp() {
-        openUrl("https://the-internet.herokuapp.com/");
-        mainPage = new MainPage(driver);
-        alertPage = new AlertPage(driver);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-    }
-
-    @Test
 
     public void alertTest() throws InterruptedException {
         // Устанавливаем WebDriverWait с таймаутом в 10 секунд
@@ -37,8 +25,6 @@ public class executeJSEvent extends BaseTest{
 
         // Прокручиваем страницу до элемента футера и кликаем по ссылке на страницу с алертами
         mainPage.scrollToFooter(mainPage.btnForLink("javascript_alerts"));
-        wait.until(ExpectedConditions.elementToBeClickable(mainPage.btnForLink("javascript_alerts"))).click();
-
         // Переходим на страницу с алертами и нажимаем кнопку, вызывающую алерт
         alertPage.clickBtnByJs(AlertsButtons.ALERT);
 
