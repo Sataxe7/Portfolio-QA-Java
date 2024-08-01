@@ -75,13 +75,16 @@ public class AlertTest extends BaseTest {
     }
 
     @AfterMethod
-    public void backdriver() {
-        if (isDataProviderTest) {
-            driver.navigate().back();
-            // Сброс флага после выполнения
-            isDataProviderTest = false;
+    public void afterMethod(ITestResult result) {
+        if (result.getMethod().getMethodName().equals("processDataProvider")) {
+            driver.navigate().back(); // Возврат на предыдущую страницу только для метода processDataProvider
+        }
 
+        // Закрытие драйвера после каждого теста
+        if (driver != null) {
+            driver.quit();
         }
     }
-
 }
+
+

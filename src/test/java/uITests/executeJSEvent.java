@@ -16,7 +16,7 @@ import java.time.Duration;
 import static PageObject.AlertPage.*;
 import static ui.LoginPasswordPage.EXPECTEDURL;
 @Listeners(Listener.class)
-public class executeJSEvent extends BaseTest {
+public class    executeJSEvent extends BaseTest {
     MainPage mainPage;
     AlertPage alertPage;
     private static boolean isDataProviderTest;
@@ -88,11 +88,9 @@ public class executeJSEvent extends BaseTest {
     }
 
     @AfterMethod
-    public void backdriver() {
-        if (isDataProviderTest) {
+    public void afterMethod(ITestResult result) {
+        if (result.getMethod().getMethodName().contains("processDataProvider")) {
             driver.navigate().back();
-            // Сброс флага после выполнения
-            isDataProviderTest = false;
         }
     }
 }

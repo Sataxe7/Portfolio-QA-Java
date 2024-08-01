@@ -22,6 +22,7 @@ public class clickBtnByJS extends BaseTest {
     MainPage mainPage;
     AlertPage alertPage;
     private static boolean isDataProviderTest;
+
     @BeforeMethod
     public void setOn() {
         openUrl("https://the-internet.herokuapp.com/");
@@ -66,7 +67,7 @@ public class clickBtnByJS extends BaseTest {
         Assert.assertEquals(alertPage.getResultText(), expected);
         isDataProviderTest = true;
     }
-    
+
     @DataProvider(name = "Providers")
     public Object[][] provideData() {
         return new Object[][]{
@@ -79,13 +80,15 @@ public class clickBtnByJS extends BaseTest {
     }
 
     @AfterMethod
-    public void backdriver() {
-        if (isDataProviderTest) {
+    public void afterMethod(ITestResult result) {
+        if (result.getMethod().getMethodName().contains("jsPrompt")) {
             driver.navigate().back();
-            // Сброс флага после выполнения
-            isDataProviderTest = false;
+            if (driver != null) {
+                driver.quit();
+            }
+
         }
     }
-}
 
+}
 
