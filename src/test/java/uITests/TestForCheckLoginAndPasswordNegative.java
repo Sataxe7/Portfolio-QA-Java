@@ -6,10 +6,13 @@ import io.qameta.allure.Owner;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import ui.LoginPasswordPage;
 
 @Listeners(Listener.class)
 
-public class TestForCheckLoginAndPasswordNegative extends TestForCheckLoginAndPasswordPositive {
+public class TestForCheckLoginAndPasswordNegative extends  BaseTest  {
+    LoginPasswordPage loginPasswordPage;
+    String currentUrl;
 
 
 
