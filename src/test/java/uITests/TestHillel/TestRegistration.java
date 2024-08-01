@@ -1,5 +1,5 @@
 
-package uITests;
+package uITests.TestHillel;
 
 import com.codeborne.selenide.Selenide;
 import driverManager.BaseTestHilel;
@@ -10,12 +10,12 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import ui.malinator_service.MailinatorMainPage;
 import ui.page_object.ConfirmEmailPage;
-import ui.page_object.ManePage;
-import ui.page_object.RecommendationsPage;
+import ui.page_object.Hilel.MainPAge;
+import ui.page_object.Hilel.RecommendationsPage;
 
 @Listeners(Listener.class)
 public class TestRegistration extends BaseTestHilel {
-    ManePage manePage = new ManePage();
+    MainPAge manePage = new MainPAge();
     MailinatorMainPage mailinatorMainPage = new MailinatorMainPage();
     ConfirmEmailPage confirmEmailPage = new ConfirmEmailPage();
     private String mail = CommonMethods.randomMail();

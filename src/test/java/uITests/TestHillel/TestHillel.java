@@ -1,4 +1,4 @@
-package uITests;
+package uITests.TestHillel;
 import driverManager.BaseTestHilel;
 import ui.hilel_site_obj.ConsultationPage;
 import ui.hilel_site_obj.MainPageHillel;

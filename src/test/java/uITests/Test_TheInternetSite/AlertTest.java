@@ -1,22 +1,15 @@
-package uITests;
+package uITests.Test_TheInternetSite;
 
 import Enums.AlertsButtons;
 import PageObject.AlertPage;
 import driverManager.Listener;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import uITests.BaseTest;
 import ui.hilel_site_obj.MainPage;
-import driverManager.DriverManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import java.time.Duration;
-
 import static PageObject.AlertPage.*;
-import static driverManager.DriverManager.getDriver;
 
 @Listeners(Listener.class)
 public class AlertTest extends BaseTest {

@@ -1,4 +1,4 @@
-package jira;
+package Api.jira;
 
 import api.pojo.IssueType;
 import api.pojo.Project;

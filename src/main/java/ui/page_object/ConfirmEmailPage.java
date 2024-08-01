@@ -2,6 +2,7 @@ package ui.page_object;
 
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
+import ui.page_object.Hilel.RecommendationsPage;
 
 import static com.codeborne.selenide.Selenide.*;
 

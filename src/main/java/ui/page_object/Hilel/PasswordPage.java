@@ -1,7 +1,8 @@
-package ui.page_object;
+package ui.page_object.Hilel;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
+import ui.page_object.ConfirmEmailPage;
 
 import static com.codeborne.selenide.Selenide.*;
 
@@ -29,7 +30,7 @@ public class PasswordPage {
    private SelenideElement emailInput() {
        return $x("//*[@id='contacts_email']");
    }
-    public ConfirmEmailPage fillingPasswordInput(String pass, String confirmPass,String phone,String email) {
+    public ConfirmEmailPage fillingPasswordInput(String pass, String confirmPass, String phone, String email) {
         passwordInput().shouldBe(Condition.visible).setValue(pass);
         confirmPasswordInput().setValue(confirmPass);
         phoneNumber().setValue(phone);

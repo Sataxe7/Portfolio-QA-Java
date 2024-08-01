@@ -1,4 +1,4 @@
-package jira;
+package Api.jira;
 
 import io.restassured.RestAssured;
 import org.apache.http.HttpStatus;

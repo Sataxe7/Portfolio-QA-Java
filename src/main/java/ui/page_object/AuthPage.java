@@ -1,6 +1,7 @@
 package ui.page_object;
 
 import com.codeborne.selenide.SelenideElement;
+import ui.page_object.Hilel.RegistrationPage;
 
 import java.time.Duration;
 

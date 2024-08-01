@@ -1,4 +1,4 @@
-package uITests;
+package uITests.Test_TheInternetSite;
 
 import driverManager.Listener;
 import io.qameta.allure.Description;
@@ -6,11 +6,12 @@ import io.qameta.allure.Owner;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import uITests.BaseTest;
 import ui.LoginPasswordPage;
 
 @Listeners(Listener.class)
 
-public class TestForCheckLoginAndPasswordNegative extends  BaseTest  {
+public class TestForCheckLoginAndPasswordNegative extends BaseTest {
     LoginPasswordPage loginPasswordPage;
     String currentUrl;
 

@@ -1,4 +1,4 @@
-package uITests;
+package uITests.Test_TheInternetSite;
 
 import driverManager.Listener;
 import org.openqa.selenium.By;
@@ -7,10 +7,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
+import uITests.BaseTest;
 import ui.LoginPasswordPage;
 import org.openqa.selenium.Cookie;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.time.Duration;

@@ -1,15 +1,12 @@
-package uITests;
+package uITests.Test_TheInternetSite;
 
 import driverManager.Listener;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
+import uITests.BaseTest;
 import ui.LoginPasswordPage;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import java.time.Duration;
 
 import static ui.LoginPasswordPage.EXPECTEDURL;
 import static ui.LoginPasswordPage.LOGINPAGEURL;
