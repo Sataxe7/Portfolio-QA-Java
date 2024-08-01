@@ -3,6 +3,7 @@ package uITests;
 import Enums.AlertsButtons;
 import PageObject.AlertPage;
 import driverManager.Listener;
+import org.testng.ITestResult;
 import org.testng.annotations.*;
 import ui.hilel_site_obj.MainPage;
 import driverManager.DriverManager;
@@ -74,11 +75,12 @@ public class AlertTest extends BaseTest {
                 {false, "You entered", "You entered: null"}
         };
     }
-        @AfterMethod
-        public  void back() {
+    @AfterMethod
+    public void cleanUp(ITestResult result) {
+        // Use this check to ensure `back()` is called only for data-driven tests
+        if (result.getMethod().getMethodName().equals("processDataProvider")) {
             driver.navigate().back();
-
-
         }
     }
+}
 

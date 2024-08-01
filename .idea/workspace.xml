@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/uITests/AlertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/AlertTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/uITests/CookieDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/CookieDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/executeJSEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/executeJSEvent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +182,7 @@
       <recent name="driverManager" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AlertTest">
+  <component name="RunManager" selected="TestNG.executeJSEvent">
     <configuration name="AlertTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Portfolio_Qa_Automation_Hilel" />
       <extension name="coverage">
@@ -276,9 +277,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.executeJSEvent" />
         <item itemvalue="TestNG.AlertTest" />
         <item itemvalue="TestNG.CookieDelete" />
-        <item itemvalue="TestNG.executeJSEvent" />
         <item itemvalue="TestNG.clickBtnByJS" />
         <item itemvalue="TestNG.TestHillel" />
       </list>
@@ -714,7 +715,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722471007081</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="29.077722">
+      <option name="closed" value="true" />
+      <created>1722472753280</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1722472753280</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -872,7 +881,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/AlertTest.java</url>
-          <line>33</line>
+          <line>34</line>
           <properties class="uITests.AlertTest" method="alertTest">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

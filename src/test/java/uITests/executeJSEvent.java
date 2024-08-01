@@ -96,7 +96,7 @@ public class executeJSEvent extends BaseTest{
 
         public void cleanUp(ITestResult result) {
             // Use this check to ensure `back()` is called only for data-driven tests
-            if (result.getMethod().getMethodName().equals("jsPrompt")) {
+            if (result.getMethod().getMethodName().equals("processDataProvider")) {
                 driver.navigate().back();
             }
         }
