@@ -33,7 +33,7 @@ public class CookieDelete extends BaseTest {
 
     @Test
     public void checkCookeis() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
         // Выполняем логин
         loginPasswordPage.selectLogin("tomsmith");
         loginPasswordPage.selectPassword("SuperSecretPassword!");

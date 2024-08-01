@@ -22,7 +22,7 @@ public class AlertTest extends BaseTest {
     protected AlertPage alertPage;
     private WebDriverWait wait;
 
-    @BeforeClass
+    @BeforeMethod
     public void setOn() {
         openUrl("https://the-internet.herokuapp.com/");
         mainPage = new MainPage(driver);
