@@ -8,14 +8,14 @@ import static io.restassured.RestAssured.given;
 
 public class SendRequest {
 
-    public static Response sendPostRequest(RequestSpecification recSpec, JiraIssueRequest jiraIssueRequest, String enpoint,
+    public static Response sendPostRequest(RequestSpecification recSpec, JiraIssueRequest jiraIssueRequest, String endpoint,
                                            int expectedStatusCod) {
         return (Response) given()
                 .spec(recSpec)
                 .when()
                 .body(jiraIssueRequest)
                 .log().all()
-                .post(enpoint)
+                .post(endpoint)
                 .then()
                 .log().all()
                 .statusCode(expectedStatusCod)

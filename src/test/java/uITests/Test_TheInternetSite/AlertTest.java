@@ -1,22 +1,22 @@
 package uITests.Test_TheInternetSite;
 
 import Enums.AlertsButtons;
-import PageObject.AlertPage;
+import ui.TheInternet.AlertPage;
 import driverManager.Listener;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
-import uITests.BaseTest;
-import ui.hilel_site_obj.MainPage;
+import driverManager.BaseTest;
+import ui.TheInternet.MainPage;
 import org.testng.Assert;
 
-import static PageObject.AlertPage.*;
+import static ui.TheInternet.AlertPage.*;
 
-@Listeners(Listener.class)
+
 public class AlertTest extends BaseTest {
 
     MainPage mainPage;
     AlertPage alertPage;
-    private static boolean isDataProviderTest;
+
 
 
     @BeforeMethod
@@ -52,7 +52,7 @@ public class AlertTest extends BaseTest {
         alertPage.clickOnBtn(AlertsButtons.PROMPT.getTEXT_ON_BUTTON());
         Assert.assertEquals(alertPage.switchToAlertAndGetText(confirm, input), PROMT_TEXT);
         Assert.assertEquals(alertPage.getResultText(), expectedOutput);
-        isDataProviderTest = true;
+
 
     }
 
@@ -74,10 +74,8 @@ public class AlertTest extends BaseTest {
         }
 
         // Закрытие драйвера после каждого теста
-        if (driver != null) {
-            driver.quit();
+
         }
     }
-}
 
 

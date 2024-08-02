@@ -1,4 +1,4 @@
-package PageObject.page_object;
+package ui.page_object.Hilel;
 
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
@@ -22,7 +22,7 @@ public class ConfirmEmailPage {
         return this;
     }
 
-    public RecommendationsPage clickBySunmit() {
+    public RecommendationsPage clickBySubmit() {
         submitBtn().click();
         return Selenide.page(RecommendationsPage.class);
     }

@@ -2,6 +2,6 @@ package api.constnts;
 
 public interface ValueName {
 
-    String PROJECT_ID = "U3QAJ201023";
+    String PROJECT_ID = "ONQM0111";
     String ISSUE_TYP_TASK = "Task";
 }

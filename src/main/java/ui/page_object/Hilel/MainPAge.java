@@ -2,7 +2,6 @@ package ui.page_object.Hilel;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
-import ui.page_object.AuthPage;
 
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.page;
@@ -30,7 +29,7 @@ public class MainPAge {
     }
 
     @Step("Click by consultation button on the Main page")
-    public ConsultationPage clickByConsultationBnt() {
+    public ConsultationPage clickByConsultationBtn() {
         consultationBnt().click();
         return page(ConsultationPage.class);
     }

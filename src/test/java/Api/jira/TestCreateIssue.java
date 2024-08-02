@@ -1,12 +1,15 @@
 package Api.jira;
 
+import driverManager.Listener;
 import io.restassured.RestAssured;
 import org.apache.http.HttpStatus;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.equalTo;
+
 
 public class TestCreateIssue {
 
@@ -14,14 +17,14 @@ public class TestCreateIssue {
     public void testCreateIssue() {
         RestAssured.baseURI = "https://jira.ithillel.com";
 
-        String userName = "r.chel";
-        String password = "r.chel";
+        String userName = "Trofan";
+        String password = "guerilla12";
 
         String requestBady = "{\n" +
                 "    \"fields\": {\n" +
                 "       \"project\":\n" +
                 "       {\n" +
-                "          \"key\": \"U3QAJ201023\"\n" +
+                "          \"key\": \"ONQM0111\"\n" +
                 "       },\n" +
                 "       \"summary\": \"REST ye merry gentlemen.\",\n" +
                 "       \"description\": \"Creating of an issue using project keys and issue type names using the REST API\",\n" +
@@ -41,6 +44,6 @@ public class TestCreateIssue {
                 .post("/rest/api/2/issue/")
                 .then()
                 .statusCode(HttpStatus.SC_CREATED)
-                .body("key", containsString("U3QAJ201023"));
+                .body("key", containsString("ONQM0111"));
     }
 }

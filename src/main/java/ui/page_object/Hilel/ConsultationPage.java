@@ -3,121 +3,79 @@ package ui.page_object.Hilel;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
-import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Condition.exactText;
+import static com.codeborne.selenide.Selenide.$x;
 
 // page_url = https://ithillel.ua/#consultation
 public class ConsultationPage {
 
-    private SelenideElement formConsultation() {
-        return $x("//form[@id='form-consultation']");
+
+    public SelenideElement inputName() {
+        return $x("//*[@id='input-name-consultation']");
     }
-
-    private SelenideElement inputName() {
-        return $x("(//input[@name='name'])[1]");
-    }
-
-    private SelenideElement inputMail() {
-        return $x("(//input[@type='email'])[1]");
-    }
-
-    private SelenideElement telCodSelector() {
-        return $x("(//div[@class='iti__flag-container'])[1]");
-    }
-
-    private SelenideElement dataCountryCod(String countryCod) {
-        return $x("(//div[@class='iti__flag-container'])[1]//ul//li[@data-country-code='" + countryCod + "']");
-    }
-
-    private SelenideElement inputTelNumber() {
-        return $x("//input[@id='input-tel-consultation']");
-    }
-
-    private SelenideElement listThisCourseSelector() {
-        return $x("(//span[@class='listbox-btn_content'])[1]");
-    }
-
-    private SelenideElement cursName(String name) {
-        return $x("//span[text()='" + name + "']");
-    }
-
-    private SelenideElement inputComment() {
-        return $x("//textarea[@id='input-comment-consultation']");
-    }
-
-    private SelenideElement privacyCheckBox() {
-        return $x("(//span[@class='checkbox_checkmark'])[10]");
-    }
-
-    private SelenideElement submitBtn() {
-        return $x("(//button[@type='submit'])[2]");
-    }
-
-    private SelenideElement resultText() {
-        return $x("//div[@class='form-result_main']/p");
-    }
-
-
-
-
-    public ConsultationPage formConsultationIsVisible() {
-        formConsultation().shouldBe(visible);
+@Step ("Input name in field name")
+    public ConsultationPage clickOnInputName(String input) {
+        inputName().setValue(input);
         return this;
     }
 
-    @Step("Filling input name on the Consultation page")
-    public ConsultationPage filingInputName(String expectedName) {
-        inputName().setValue(expectedName);
+    public SelenideElement inputEmail() {
+        return $x("//*[@id='input-email-consultation']");
+    }
+@Step ("Input Email data")
+    public ConsultationPage clickOnEmail(String email) {
+        inputEmail().setValue(email);
         return this;
     }
 
-    @Step("Filling input mail on the Consultation page")
-    public ConsultationPage filingInputMail(String expectedMail) {
-        inputMail().setValue(expectedMail);
+    public SelenideElement inputPhone() {
+        return $x("//*[@id='input-tel-consultation']");
+    }
+@Step("Input phone data")
+    public ConsultationPage clickOnPhone(String phone) {
+        inputPhone().setValue(phone);
         return this;
     }
 
-    @Step("Choose tell cod on the Consultation page")
-    public ConsultationPage choosesTelCode(String countryCod) {
-        telCodSelector().click();
-        dataCountryCod(countryCod).scrollIntoView("{block: \"center\"}").click();
+    public SelenideElement inputCourse() {
+        return $x("//button[@id='listbox-btn-input-course-consultation']");
+    }
+@Step ("Choose course from scroll-menu")
+    public SelenideElement chooseCourse(String name) {
+        return $x("//span[@class='listbox_text' and text()='" + name + "']");
+    }
+@Step("Choose course name and click")
+    public ConsultationPage clickOnCourse(String courseName) {
+        inputCourse().click();
+        chooseCourse(courseName).click();
         return this;
     }
 
-    @Step("Filling input tell number on the Consultation page")
-    public ConsultationPage filingInputTelNumber(String telNumber) {
-        inputTelNumber().setValue(telNumber);
+    public SelenideElement inputPrivacyBox() {
+        return $x("(//span[@class='checkbox_checkmark'])[1]");
+
+    }
+@Step("Accept check box")
+    public ConsultationPage clickOnCheckBox() {
+        inputPrivacyBox().click();
         return this;
     }
 
-    @Step("Choose course on the Consultation page")
-    public ConsultationPage choosesCourse(String courseName) {
-        listThisCourseSelector().click();
-        cursName(courseName).click();
+    public SelenideElement inputRequest() {
+        return $x("(//button[@type='submit']) [2]");
+    }
+@Step("Click on request consultation")
+    public ConsultationPage clickOnRequest() {
+        inputRequest().click();
         return this;
     }
 
-    @Step("Enter comment on the Consultation page")
-    public ConsultationPage enterComment(String comment) {
-        inputComment().setValue(comment);
-        return this;
+    public SelenideElement messageRequestIs() {
+        return $x("//*[@class='p-xli c-green form-result_message']");
     }
-
-    @Step("Click privacy check box on the Consultation page")
-    public ConsultationPage clickPrivacyCheckBox() {
-        privacyCheckBox().click();
-        return this;
-    }
-
-    @Step("Click by submit on the Consultation page")
-    public ConsultationPage clickBySubmitBtn() {
-        submitBtn().click();
-        return this;
-    }
-
-    @Step("Checks result text on the Consultation page")
-    public ConsultationPage checksResultText() {
-        resultText().shouldHave(exactText("Відправлено"));
+@Step("Check Message of request Consultation ")
+    public ConsultationPage checkMessageRequest() {
+        messageRequestIs().shouldHave(exactText("Відправлено"));
         return this;
     }
 }

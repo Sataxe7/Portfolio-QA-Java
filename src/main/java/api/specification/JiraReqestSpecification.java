@@ -14,7 +14,7 @@ public class JiraReqestSpecification {
                     .setBaseUri("https://jira.ithillel.com")
                     .setContentType(ContentType.JSON)
                     .setAccept("application/json")
-                    .setAuth(RestAssured.preemptive().basic("r.chel", "r.chel"))
+                    .setAuth(RestAssured.preemptive().basic("Trofan", "guerilla12"))
                     .addHeader("User-Agent", "hillel_automationQA")
                     .log(LogDetail.ALL)
                     .build()

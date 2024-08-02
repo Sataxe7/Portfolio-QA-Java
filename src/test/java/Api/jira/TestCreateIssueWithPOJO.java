@@ -13,11 +13,11 @@ import static api.request.SendRequest.sendPostRequest;
 import static api.specification.JiraReqestSpecification.reqestSpec;
 import static org.hamcrest.Matchers.containsString;
 
-public class TestCreateIssueWthisPOJO {
+public class TestCreateIssueWithPOJO {
 
 
     @Test
-    public void testCreatIssueWthisPOJO() {
+    public void testCreatIssueWithPOJO() {
         JiraIssueRequest issueRequest = new JiraIssueRequest(
                 new Project(PROJECT_ID),
                 "This is new task POJO.",

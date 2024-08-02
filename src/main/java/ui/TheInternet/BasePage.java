@@ -1,4 +1,4 @@
-package PageObject;
+package ui.TheInternet;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;

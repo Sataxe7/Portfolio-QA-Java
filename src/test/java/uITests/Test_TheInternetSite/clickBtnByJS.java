@@ -1,16 +1,16 @@
 package uITests.Test_TheInternetSite;
 
 import Enums.AlertsButtons;
-import PageObject.AlertPage;
+import ui.TheInternet.AlertPage;
 import driverManager.Listener;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
-import uITests.BaseTest;
-import ui.hilel_site_obj.MainPage;
+import driverManager.BaseTest;
+import ui.TheInternet.MainPage;
 
-import static PageObject.AlertPage.*;
-@Listeners(Listener.class)
+import static ui.TheInternet.AlertPage.*;
+
 public class clickBtnByJS extends BaseTest {
     MainPage mainPage;
     AlertPage alertPage;

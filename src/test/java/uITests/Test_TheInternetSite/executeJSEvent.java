@@ -1,24 +1,23 @@
 package uITests.Test_TheInternetSite;
 
 import Enums.AlertsButtons;
-import PageObject.AlertPage;
+import ui.TheInternet.AlertPage;
 import driverManager.Listener;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
-import uITests.BaseTest;
-import ui.hilel_site_obj.MainPage;
+import driverManager.BaseTest;
+import ui.TheInternet.MainPage;
 
 import java.time.Duration;
 
-import static PageObject.AlertPage.*;
+import static ui.TheInternet.AlertPage.*;
 
 @Listeners(Listener.class)
 public class    executeJSEvent extends BaseTest {
     MainPage mainPage;
     AlertPage alertPage;
-    private static boolean isDataProviderTest;
 
 
     @BeforeMethod
@@ -72,7 +71,7 @@ public class    executeJSEvent extends BaseTest {
         AlertPage.executeJsEvent(AlertsButtons.PROMPT);
         Assert.assertEquals(alertPage.switchToAlertAndGetText(confirm, input),PROMT_TEXT);
         Assert.assertEquals(alertPage.getResultText(), expectedOutput);
-        isDataProviderTest = true;
+
     }
 
     @DataProvider(name = "Providers")

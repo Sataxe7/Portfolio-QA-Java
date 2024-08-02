@@ -3,14 +3,14 @@ package uITests.Test_TheInternetSite;
 import driverManager.Listener;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
-import uITests.BaseTest;
-import ui.LoginPasswordPage;
+import driverManager.BaseTest;
+import ui.TheInternet.LoginPasswordPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static ui.LoginPasswordPage.EXPECTEDURL;
-import static ui.LoginPasswordPage.LOGINPAGEURL;
-@Listeners(Listener.class)
+import static ui.TheInternet.LoginPasswordPage.EXPECTEDURL;
+import static ui.TheInternet.LoginPasswordPage.LOGINPAGEURL;
+
 public class TestForCheckLoginAndPasswordPositive extends BaseTest {
 
     LoginPasswordPage loginPasswordPage;

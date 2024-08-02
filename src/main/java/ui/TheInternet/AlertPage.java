@@ -1,4 +1,4 @@
-package PageObject;
+package ui.TheInternet;
 
 import Enums.AlertsButtons;
 import org.openqa.selenium.*;

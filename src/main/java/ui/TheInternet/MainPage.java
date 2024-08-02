@@ -1,6 +1,5 @@
-package ui.hilel_site_obj;
+package ui.TheInternet;
 
-import PageObject.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;

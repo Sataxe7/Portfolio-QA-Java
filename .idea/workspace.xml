@@ -6,27 +6,45 @@
   <component name="ChangeListManager">
     <list default="true" id="998ac32d-8d2d-4130-a2b1-8614c56b1445" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajcore.20240321.001430.717.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ajcore.20240321.001430.717.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajcore.20240321.001444.943.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ajcore.20240321.001444.943.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajcore.20240321.001527.764.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ajcore.20240321.001527.764.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajcore.20240321.001831.948.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ajcore.20240321.001831.948.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/page_object/AuthPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/page_object/AuthPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/page_object/ConfirmEmailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/page_object/ConfirmEmailPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/page_object/ConsultationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/page_object/Hilel/ConsultationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/page_object/ManePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/page_object/Hilel/MainPAge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/page_object/PasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/page_object/Hilel/PasswordPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/page_object/RecommendationsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/page_object/Hilel/RecommendationsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/page_object/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/page_object/Hilel/RegistrationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/jira/TestCreateIssue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Api/jira/TestCreateIssue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/jira/TestCreateIssueWthisPOJO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Api/jira/TestCreateIssueWthisPOJO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/AlertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/AlertTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/CookieDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/CookieDelete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/TestForCheckLoginAndPasswordNegative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/TestForCheckLoginAndPasswordNegative.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/TestForCheckLoginAndPasswordPositive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/TestForCheckLoginAndPasswordPositive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/TestHillel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/TestHillel/TestHillel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/TestRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/TestHillel/TestRegistration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/clickBtnByJS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/clickBtnByJS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/executeJSEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/executeJSEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/AlertPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/TheInternet/AlertPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/TheInternet/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/page_object/AuthPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/page_object/ConfirmEmailPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/page_object/ConsultationPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/page_object/ManePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/page_object/PasswordPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/page_object/RecommendationsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/page_object/RegistrationPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/constnts/ValueName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/constnts/ValueName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/request/SendRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/request/SendRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/specification/JiraReqestSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/specification/JiraReqestSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/driverManager/DriverManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/LoginPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/TheInternet/LoginPasswordPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/hilel_site_obj/ConsultationPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/hilel_site_obj/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/TheInternet/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/hilel_site_obj/MainPageHillel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/malinator_service/PublicMassegePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/malinator_service/PublicMassegePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/page_object/AuthPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/page_object/Hilel/AuthPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/page_object/ConfirmEmailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/page_object/Hilel/ConfirmEmailPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/page_object/Hilel/ConsultationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/page_object/Hilel/ConsultationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/page_object/Hilel/MainPAge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/page_object/Hilel/MainPAge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/page_object/Hilel/PasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/page_object/Hilel/PasswordPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/page_object/Hilel/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/page_object/Hilel/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Api/jira/TestCreateIssue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Api/jira/TestCreateIssue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Api/jira/TestCreateIssueWthisPOJO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Api/jira/TestCreateIssueWithPOJO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/driverManager/BaseTestHilel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/driverManager/BaseTestHilel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/driverManager/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/TestHillel/TestHillel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/TestHillel/TestHillel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/TestHillel/TestRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/TestHillel/TestRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/AlertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/AlertTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/CookieDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/CookieDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/TestForCheckLoginAndPasswordNegative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/TestForCheckLoginAndPasswordNegative.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/TestForCheckLoginAndPasswordPositive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/TestForCheckLoginAndPasswordPositive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/clickBtnByJS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/clickBtnByJS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/executeJSEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/executeJSEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test_suite/ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test_suite/ui.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObject/AlertPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObject/BasePage.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,92 +103,95 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.testApiExampleOne.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SelenideExamples.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestHillel.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestHillel.requestForConsultation.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Portfolio_Qa_Automation_Hilel [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Portfolio_Qa_Automation_Hilel [io.qameta.allure:allure-maven:2.10.0:install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Portfolio_Qa_Automation_Hilel [io.qameta.allure:allure-maven:2.10.0:serve].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Portfolio_Qa_Automation_Hilel [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Portfolio_Qa_Automation_Hilel [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Portfolio_Qa_Automation_Hilel [test].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.AlertTest (1).executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.AlertTest.ConfirmDismissTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AlertTest.alertTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AlertTest.confirmAcceptTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AlertTest.confirmDismissTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AlertTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AlertTest.processDataProvider.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AlertTest.promtDataProvider.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AlertTest.testAlerts.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ApiPostIssue.apiPostIssue.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ApiPostIssue.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Assigning_An_Issue_.Assigning_An_Issue (1).executor&quot;: &quot;Coverage&quot;,
-    &quot;TestNG.Assigning_An_Issue_.Assigning_An_Issue (2).executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.Assigning_An_Issue_.Assigning_An_Issue.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Assigning_An_Issue_.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.CookieDelete.checkCookeis.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.CookieDelete.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.PostComment.PostComment.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.PostComment.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestCreateIssue.testCreateIssue.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestCreateIssueWthisPOJO.testCreatIssueWthisPOJO.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestForCheckLoginAndPasswordNegative.checkLoginPage.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestForCheckLoginAndPasswordNegative.checkMissingUser.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestForCheckLoginAndPasswordNegative.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestForCheckLoginAndPasswordPositive.checkLogin.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestForCheckLoginAndPasswordPositive.checkLoginForm.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestForCheckLoginAndPasswordPositive.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestHillel.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestHillel.requestForConsultation (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestHillel.requestForConsultation.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestHillelRegistration.testRegistration.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestRegistration.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestRegistration.testRegistration (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestRegistration.testRegistration.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.clickBtnByJS.alertTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.clickBtnByJS.clickJsAlert.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.clickBtnByJS.confirmMiTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.clickBtnByJS.disMissTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.clickBtnByJS.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.clickBtnByJS.jsPrompt.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.clickBtnByJS.jsPromt.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.clickBtnByJS.testAlerts.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.executeJSEvent.alertTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.executeJSEvent.confirmAlert.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.executeJSEvent.confirmDismissTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.executeJSEvent.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.executeJSEvent.processDataProvider.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.testApiExampleOne.createObjectTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.testApiExampleOne.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.testApiExampleOne.testAddAllowedIPAddresses.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.testApiExampleOne.testApiExampleOne.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.testApiExampleOne.testApiRequestWithRestAssured.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.testApiExampleOne.testApiRequestWithSelenide.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.testApiExampleOne.testApiWithPojo.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.testApiExampleOne.testWhitelistAccessSettings.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/Alexander/IdeaProjects/Portfolio_Qa_Automation_Hilel/src/test/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alexander/IdeaProjects/Portfolio_Qa_Automation_Hilel/src/test/java/uITests&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15620641&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.6864407&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.testApiExampleOne.executor": "Run",
+    "JUnit.SelenideExamples.executor": "Run",
+    "JUnit.TestHillel.executor": "Run",
+    "JUnit.TestHillel.requestForConsultation.executor": "Run",
+    "Maven.Portfolio_Qa_Automation_Hilel [clean].executor": "Run",
+    "Maven.Portfolio_Qa_Automation_Hilel [io.qameta.allure:allure-maven:2.10.0:install].executor": "Run",
+    "Maven.Portfolio_Qa_Automation_Hilel [io.qameta.allure:allure-maven:2.10.0:serve].executor": "Run",
+    "Maven.Portfolio_Qa_Automation_Hilel [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "Maven.Portfolio_Qa_Automation_Hilel [package].executor": "Run",
+    "Maven.Portfolio_Qa_Automation_Hilel [test].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.AlertTest (1).executor": "Debug",
+    "TestNG.AlertTest.ConfirmDismissTest.executor": "Run",
+    "TestNG.AlertTest.alertTest.executor": "Run",
+    "TestNG.AlertTest.confirmAcceptTest.executor": "Run",
+    "TestNG.AlertTest.confirmDismissTest.executor": "Run",
+    "TestNG.AlertTest.executor": "Run",
+    "TestNG.AlertTest.processDataProvider.executor": "Run",
+    "TestNG.AlertTest.promtDataProvider.executor": "Run",
+    "TestNG.AlertTest.testAlerts.executor": "Run",
+    "TestNG.ApiPostIssue.apiPostIssue.executor": "Run",
+    "TestNG.ApiPostIssue.executor": "Run",
+    "TestNG.Assigning_An_Issue_.Assigning_An_Issue (1).executor": "Coverage",
+    "TestNG.Assigning_An_Issue_.Assigning_An_Issue (2).executor": "Debug",
+    "TestNG.Assigning_An_Issue_.Assigning_An_Issue.executor": "Run",
+    "TestNG.Assigning_An_Issue_.executor": "Run",
+    "TestNG.CookieDelete.checkCookeis.executor": "Run",
+    "TestNG.CookieDelete.executor": "Run",
+    "TestNG.PostComment.PostComment.executor": "Run",
+    "TestNG.PostComment.executor": "Run",
+    "TestNG.TestCreateIssue.testCreateIssue.executor": "Run",
+    "TestNG.TestCreateIssueWithPOJO.executor": "Run",
+    "TestNG.TestCreateIssueWithPOJO.testCreatIssueWithPOJO.executor": "Run",
+    "TestNG.TestCreateIssueWthisPOJO.executor": "Run",
+    "TestNG.TestCreateIssueWthisPOJO.testCreatIssueWthisPOJO.executor": "Run",
+    "TestNG.TestForCheckLoginAndPasswordNegative.checkLoginPage.executor": "Run",
+    "TestNG.TestForCheckLoginAndPasswordNegative.checkMissingUser.executor": "Run",
+    "TestNG.TestForCheckLoginAndPasswordNegative.executor": "Run",
+    "TestNG.TestForCheckLoginAndPasswordPositive.checkLogin.executor": "Run",
+    "TestNG.TestForCheckLoginAndPasswordPositive.checkLoginForm.executor": "Run",
+    "TestNG.TestForCheckLoginAndPasswordPositive.executor": "Run",
+    "TestNG.TestHillel.executor": "Run",
+    "TestNG.TestHillel.requestForConsultation (1).executor": "Run",
+    "TestNG.TestHillel.requestForConsultation.executor": "Run",
+    "TestNG.TestHillelRegistration.testRegistration.executor": "Run",
+    "TestNG.TestRegistration.executor": "Run",
+    "TestNG.TestRegistration.testRegistration (1).executor": "Run",
+    "TestNG.TestRegistration.testRegistration.executor": "Run",
+    "TestNG.clickBtnByJS.alertTest.executor": "Run",
+    "TestNG.clickBtnByJS.clickJsAlert.executor": "Run",
+    "TestNG.clickBtnByJS.confirmMiTest.executor": "Run",
+    "TestNG.clickBtnByJS.disMissTest.executor": "Run",
+    "TestNG.clickBtnByJS.executor": "Run",
+    "TestNG.clickBtnByJS.jsPrompt.executor": "Run",
+    "TestNG.clickBtnByJS.jsPromt.executor": "Run",
+    "TestNG.clickBtnByJS.testAlerts.executor": "Run",
+    "TestNG.executeJSEvent.alertTest.executor": "Run",
+    "TestNG.executeJSEvent.confirmAlert.executor": "Run",
+    "TestNG.executeJSEvent.confirmDismissTest.executor": "Run",
+    "TestNG.executeJSEvent.executor": "Run",
+    "TestNG.executeJSEvent.processDataProvider.executor": "Run",
+    "TestNG.testApiExampleOne.createObjectTest.executor": "Run",
+    "TestNG.testApiExampleOne.executor": "Run",
+    "TestNG.testApiExampleOne.testAddAllowedIPAddresses.executor": "Run",
+    "TestNG.testApiExampleOne.testApiExampleOne.executor": "Run",
+    "TestNG.testApiExampleOne.testApiRequestWithRestAssured.executor": "Run",
+    "TestNG.testApiExampleOne.testApiRequestWithSelenide.executor": "Run",
+    "TestNG.testApiExampleOne.testApiWithPojo.executor": "Run",
+    "TestNG.testApiExampleOne.testWhitelistAccessSettings.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/Alexander/IdeaProjects/Portfolio_Qa_Automation_Hilel/src/test/java",
+    "last_opened_file_path": "C:/Users/Alexander/IdeaProjects/Portfolio_Qa_Automation_Hilel/src/test/java/uITests",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.15620641",
+    "project.structure.side.proportion": "0.6864407",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="api.sendRequest" />
@@ -200,17 +221,17 @@
       <recent name="driverManager" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.executeJSEvent">
-    <configuration name="CookieDelete" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestCreateIssueWithPOJO.testCreatIssueWithPOJO">
+    <configuration name="TestCreateIssueWithPOJO" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Portfolio_Qa_Automation_Hilel" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uITests.Test_TheInternetSite.*" />
+          <option name="PATTERN" value="Api.jira.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="uITests" />
-      <option name="MAIN_CLASS_NAME" value="uITests.Test_TheInternetSite.CookieDelete" />
+      <option name="PACKAGE_NAME" value="Api.jira" />
+      <option name="MAIN_CLASS_NAME" value="Api.jira.TestCreateIssueWithPOJO" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -218,68 +239,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestForCheckLoginAndPasswordPositive" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCreateIssueWithPOJO.testCreatIssueWithPOJO" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Portfolio_Qa_Automation_Hilel" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uITests.Test_TheInternetSite.*" />
+          <option name="PATTERN" value="Api.jira.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="uITests" />
-      <option name="MAIN_CLASS_NAME" value="uITests.Test_TheInternetSite.TestForCheckLoginAndPasswordPositive" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="clickBtnByJS" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Portfolio_Qa_Automation_Hilel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uITests.Test_TheInternetSite.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uITests" />
-      <option name="MAIN_CLASS_NAME" value="uITests.Test_TheInternetSite.clickBtnByJS" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="executeJSEvent" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Portfolio_Qa_Automation_Hilel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uITests.Test_TheInternetSite.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uITests" />
-      <option name="MAIN_CLASS_NAME" value="uITests.Test_TheInternetSite.executeJSEvent" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="executeJSEvent.alertTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Portfolio_Qa_Automation_Hilel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uITests.Test_TheInternetSite.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uITests" />
-      <option name="MAIN_CLASS_NAME" value="uITests.Test_TheInternetSite.executeJSEvent" />
-      <option name="METHOD_NAME" value="alertTest" />
+      <option name="PACKAGE_NAME" value="Api.jira" />
+      <option name="MAIN_CLASS_NAME" value="Api.jira.TestCreateIssueWithPOJO" />
+      <option name="METHOD_NAME" value="testCreatIssueWithPOJO" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -287,20 +257,73 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestCreateIssueWithPOJO.testCreatIssueWthisPOJO" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Portfolio_Qa_Automation_Hilel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Api.jira.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Api.jira" />
+      <option name="MAIN_CLASS_NAME" value="Api.jira.TestCreateIssueWithPOJO" />
+      <option name="METHOD_NAME" value="testCreatIssueWthisPOJO" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCreateIssue.testCreateIssue" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Portfolio_Qa_Automation_Hilel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Api.jira.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Api.jira" />
+      <option name="MAIN_CLASS_NAME" value="Api.jira.TestCreateIssue" />
+      <option name="METHOD_NAME" value="testCreateIssue" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRegistration" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Portfolio_Qa_Automation_Hilel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uITests.TestHillel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uITests.TestHillel" />
+      <option name="MAIN_CLASS_NAME" value="uITests.TestHillel.TestRegistration" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="TestNG.CookieDelete" />
-      <item itemvalue="TestNG.TestForCheckLoginAndPasswordPositive" />
-      <item itemvalue="TestNG.clickBtnByJS" />
-      <item itemvalue="TestNG.executeJSEvent.alertTest" />
-      <item itemvalue="TestNG.executeJSEvent" />
+      <item itemvalue="TestNG.TestCreateIssue.testCreateIssue" />
+      <item itemvalue="TestNG.TestCreateIssueWithPOJO" />
+      <item itemvalue="TestNG.TestCreateIssueWithPOJO.testCreatIssueWithPOJO" />
+      <item itemvalue="TestNG.TestCreateIssueWithPOJO.testCreatIssueWthisPOJO" />
+      <item itemvalue="TestNG.TestRegistration" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.executeJSEvent" />
-        <item itemvalue="TestNG.CookieDelete" />
-        <item itemvalue="TestNG.clickBtnByJS" />
-        <item itemvalue="TestNG.TestForCheckLoginAndPasswordPositive" />
-        <item itemvalue="TestNG.executeJSEvent.alertTest" />
+        <item itemvalue="TestNG.TestCreateIssueWithPOJO.testCreatIssueWithPOJO" />
+        <item itemvalue="TestNG.TestCreateIssueWithPOJO" />
+        <item itemvalue="TestNG.TestRegistration" />
+        <item itemvalue="TestNG.TestCreateIssue.testCreateIssue" />
+        <item itemvalue="TestNG.TestCreateIssueWithPOJO.testCreatIssueWthisPOJO" />
       </list>
     </recent_temporary>
   </component>
@@ -397,14 +420,6 @@
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
       <updated>1708465744018</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Pull-">
-      <option name="closed" value="true" />
-      <created>1708963541974</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1708963541974</updated>
     </task>
     <task id="LOCAL-00005" summary="First variant">
       <option name="closed" value="true" />
@@ -774,7 +789,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722526271832</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="29.077722">
+      <option name="closed" value="true" />
+      <created>1722551787274</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1722551787275</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -863,33 +886,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Api/jira/TestCreateIssue.java</url>
-          <line>14</line>
+          <line>17</line>
           <option name="timeStamp" value="113" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/uITests/TestHillel/TestRegistration.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="134" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/AlertTest.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="145" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/clickBtnByJS.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="146" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/TestForCheckLoginAndPasswordPositive.java</url>
           <line>16</line>
           <option name="timeStamp" value="147" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/clickBtnByJS.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="148" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/executeJSEvent.java</url>
@@ -899,7 +902,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/clickBtnByJS.java</url>
           <line>42</line>
-          <properties class="uITests.Test_TheInternetSite.clickBtnByJS">
+          <properties class="ui.page_object.Hilel.uITests.Test_TheInternetSite.clickBtnByJS">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -942,31 +945,22 @@
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/Api/jira/TestCreateIssue.java</url>
-          <line>13</line>
-          <properties class="Api.jira.TestCreateIssue" method="testCreateIssue">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="112" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/clickBtnByJS.java</url>
           <line>34</line>
-          <properties class="uITests.Test_TheInternetSite.clickBtnByJS">
+          <properties class="ui.page_object.Hilel.uITests.Test_TheInternetSite.clickBtnByJS">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="141" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/AlertTest.java</url>
-          <line>54</line>
-          <properties class="uITests.Test_TheInternetSite.AlertTest">
+          <url>file://$PROJECT_DIR$/src/test/java/Api/jira/TestCreateIssueWithPOJO.java</url>
+          <line>19</line>
+          <properties class="Api.jira.TestCreateIssueWithPOJO" method="testCreatIssueWthisPOJO">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="144" />
+          <option name="timeStamp" value="154" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.StackOverflowError" package="java.lang" />

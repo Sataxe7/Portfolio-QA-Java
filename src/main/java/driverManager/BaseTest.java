@@ -1,7 +1,5 @@
-package uITests;
+package driverManager;
 
-import driverManager.Listener;
-import driverManager.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 

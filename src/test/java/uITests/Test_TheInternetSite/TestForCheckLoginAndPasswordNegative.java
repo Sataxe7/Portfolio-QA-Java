@@ -6,10 +6,9 @@ import io.qameta.allure.Owner;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import uITests.BaseTest;
-import ui.LoginPasswordPage;
+import driverManager.BaseTest;
+import ui.TheInternet.LoginPasswordPage;
 
-@Listeners(Listener.class)
 
 public class TestForCheckLoginAndPasswordNegative extends BaseTest {
     LoginPasswordPage loginPasswordPage;

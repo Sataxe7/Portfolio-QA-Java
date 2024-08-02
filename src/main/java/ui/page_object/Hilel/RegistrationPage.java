@@ -7,7 +7,6 @@ import java.util.List;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
-import static com.codeborne.selenide.Selenide.page;
 
 // page_url = https://lms.ithillel.ua/auth/registration/contacts
 public class RegistrationPage {
@@ -44,24 +43,18 @@ public class RegistrationPage {
     }
 
     public PasswordPage fillingRegistrationForm(String name, String surname) {
+
         nameInput().shouldBe(visible).setValue(name);
         surnameInput().setValue(surname);
-        dataProcessingCheckBox().click();
-
-        termsCheckBox().click();
-        nextBtn().click();
-        return page(PasswordPage.class);
-    }
-    public PasswordPage fillingRegistrationFormTwo(String mail, String telNumber) {
-        mailInput().setValue(mail);
-        telephoneInput().setValue(telNumber);
+        /*mailInput().setValue(mail);
+        telephoneInput().setValue(telNumber);*/
         dataProcessingCheckBox().click();
         termsCheckBox().click();
         nextBtn().click();
         return page(PasswordPage.class);
     }
-
-    public PasswordPage fillingRegistrationForm(String... value) {
+}
+  /*  public PasswordPage fillingRegistrationForm(String... value) {
         List<String> listValue = Arrays.asList(value);
         nameInput().shouldBe(visible).setValue(listValue.get(0));
         surnameInput().setValue(listValue.get(1));
@@ -73,4 +66,4 @@ public class RegistrationPage {
         nextBtn().click();
         return page(PasswordPage.class);
     }
-}
+}*/

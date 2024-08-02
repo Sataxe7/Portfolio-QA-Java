@@ -1,15 +1,9 @@
-package ui;
+package ui.TheInternet;
 
-import PageObject.BasePage;
-import driverManager.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class LoginPasswordPage extends BasePage {
     public static final String EXPECTED_TITLE = "Login and Password ";
