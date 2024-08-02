@@ -6,22 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="998ac32d-8d2d-4130-a2b1-8614c56b1445" name="Changes" comment="Done 02 08 2024">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajcore.20240321.001430.717.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ajcore.20240321.001430.717.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajcore.20240321.001444.943.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ajcore.20240321.001444.943.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajcore.20240321.001527.764.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ajcore.20240321.001527.764.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajcore.20240321.001831.948.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ajcore.20240321.001831.948.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/driverManager/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/driverManager/Listener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/driverManager/Listener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/TestHillel/TestHillel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/TestHillel/TestHillel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/TestHillel/TestRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/TestHillel/TestRegistration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/AlertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/Test_TheInternetSite/AlertTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/CookieDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/Test_TheInternetSite/CookieDelete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/TestForCheckLoginAndPasswordNegative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/Test_TheInternetSite/TestForCheckLoginAndPasswordNegative.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/TestForCheckLoginAndPasswordPositive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/Test_TheInternetSite/TestForCheckLoginAndPasswordPositive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/clickBtnByJS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/Test_TheInternetSite/clickBtnByJS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uITests/Test_TheInternetSite/executeJSEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/Test_TheInternetSite/executeJSEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/Test_TheInternetSite/clickBtnByJS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/Test_TheInternetSite/clickBtnByJS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/test_suite/ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test_suite/ui.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/driverManager/DriverManager.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +49,6 @@
     <setting file="jar://$PROJECT_DIR$/../../../../Program Files/Java/jdk-17.0.4/lib/src.zip!/java.base/java/lang/String.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../../../Program Files/Java/jdk-17.0.4/lib/src.zip!/java.base/java/lang/reflect/Constructor.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/testng/testng/7.7.0/testng-7.7.0.jar!/org/testng/Assert.class" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/uITests/TestForCheckLoginAndPasswordPositive.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -110,6 +95,7 @@
     "TestNG.Assigning_An_Issue_.Assigning_An_Issue (2).executor": "Debug",
     "TestNG.Assigning_An_Issue_.Assigning_An_Issue.executor": "Run",
     "TestNG.Assigning_An_Issue_.executor": "Run",
+    "TestNG.C:/Users/Alexander/IdeaProjects/Portfolio_Qa_Automation_Hilel/src/test/resources/test_suite/ui.xml.executor": "Run",
     "TestNG.CookieDelete.checkCookeis.executor": "Run",
     "TestNG.CookieDelete.executor": "Run",
     "TestNG.PostComment.PostComment.executor": "Run",
@@ -165,7 +151,7 @@
     "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.15620641",
     "project.structure.side.proportion": "0.6864407",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -216,17 +202,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCreateIssueWithPOJO" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/Alexander/IdeaProjects/Portfolio_Qa_Automation_Hilel/src/test/resources/test_suite/ui.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Portfolio_Qa_Automation_Hilel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Api.jira.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Api.jira" />
-      <option name="MAIN_CLASS_NAME" value="Api.jira.TestCreateIssueWithPOJO" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/test_suite/ui.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -286,8 +265,8 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="TestNG.C:/Users/Alexander/IdeaProjects/Portfolio_Qa_Automation_Hilel/src/test/resources/test_suite/ui.xml" />
       <item itemvalue="TestNG.AlertTest" />
-      <item itemvalue="TestNG.TestCreateIssueWithPOJO" />
       <item itemvalue="TestNG.TestCreateIssueWithPOJO.testCreatIssueWithPOJO" />
       <item itemvalue="TestNG.clickBtnByJS" />
       <item itemvalue="TestNG.TestHillel" />
@@ -295,10 +274,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.clickBtnByJS" />
+        <item itemvalue="TestNG.C:/Users/Alexander/IdeaProjects/Portfolio_Qa_Automation_Hilel/src/test/resources/test_suite/ui.xml" />
         <item itemvalue="TestNG.TestHillel" />
         <item itemvalue="TestNG.AlertTest" />
         <item itemvalue="TestNG.TestCreateIssueWithPOJO.testCreatIssueWithPOJO" />
-        <item itemvalue="TestNG.TestCreateIssueWithPOJO" />
       </list>
     </recent_temporary>
   </component>
@@ -942,7 +921,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/Api/jira/TestCreateIssueWithPOJO.java</url>
           <line>19</line>
-          <properties class="Api.jira.TestCreateIssueWithPOJO" method="testCreatIssueWthisPOJO">
+          <properties class="Api.jira.TestCreateIssueWithPOJO" method="testCreatIssueWithPOJO">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>

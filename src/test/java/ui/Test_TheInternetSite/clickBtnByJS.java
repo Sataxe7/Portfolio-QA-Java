@@ -73,14 +73,9 @@ public class clickBtnByJS extends BaseTest {
 
     @AfterMethod
     public void afterMethod(ITestResult result) {
-        if (result.getMethod().getMethodName().contains("jsPrompt")) {
             driver.navigate().back();
-            if (driver != null) {
-                driver.quit();
+
             }
 
         }
-    }
-
-}
 

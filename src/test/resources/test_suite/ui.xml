@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="ui" parallel="classes" thread-count="4">
+<suite name="All Test Suite">
     <listeners>
         <listener class-name="driverManager.Listener"/>
     </listeners>
 
-    <test name="ui">
+    <test verbose="2" preserve-order="true" name="C:/Users/Alexander/IdeaProjects/Portfolio_Qa_Automation_Hilel">
+
         <packages>
-            <package name="ui"/>
+            <package name="ui.*"/>
         </packages>
+
     </test>
 </suite>
-
-
