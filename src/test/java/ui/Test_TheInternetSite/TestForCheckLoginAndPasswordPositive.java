@@ -1,8 +1,6 @@
-package uITests.Test_TheInternetSite;
+package ui.Test_TheInternetSite;
 
-import driverManager.Listener;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import driverManager.BaseTest;
 import ui.TheInternet.LoginPasswordPage;
 import org.testng.Assert;

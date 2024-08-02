@@ -1,6 +1,5 @@
-package uITests.Test_TheInternetSite;
+package ui.Test_TheInternetSite;
 
-import driverManager.Listener;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Step;
@@ -9,7 +8,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import driverManager.BaseTest;
 import ui.TheInternet.LoginPasswordPage;
 import org.openqa.selenium.Cookie;

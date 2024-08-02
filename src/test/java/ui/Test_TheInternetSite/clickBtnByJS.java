@@ -1,8 +1,7 @@
-package uITests.Test_TheInternetSite;
+package ui.Test_TheInternetSite;
 
 import Enums.AlertsButtons;
 import ui.TheInternet.AlertPage;
-import driverManager.Listener;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.*;

@@ -1,4 +1,4 @@
-package uITests.Test_TheInternetSite;
+package ui.Test_TheInternetSite;
 
 import Enums.AlertsButtons;
 import ui.TheInternet.AlertPage;

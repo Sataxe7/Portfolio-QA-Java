@@ -1,10 +1,8 @@
-package uITests.Test_TheInternetSite;
+package ui.Test_TheInternetSite;
 
-import driverManager.Listener;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import org.testng.Assert;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import driverManager.BaseTest;
 import ui.TheInternet.LoginPasswordPage;

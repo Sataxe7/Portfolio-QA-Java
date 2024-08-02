@@ -1,11 +1,9 @@
-package uITests.TestHillel;
+package ui.TestHillel;
 import driverManager.BaseTestHilel;
 import io.qameta.allure.Step;
 import ui.page_object.Hilel.ConsultationPage;
-import driverManager.Listener;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Listeners;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import ui.page_object.Hilel.MainPAge;

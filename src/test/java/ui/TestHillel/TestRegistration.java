@@ -1,15 +1,13 @@
 
-package uITests.TestHillel;
+package ui.TestHillel;
 
 import com.codeborne.selenide.Selenide;
 import driverManager.BaseTestHilel;
 import driverManager.CommonMethods;
-import driverManager.Listener;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WindowType;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import ui.malinator_service.MailinatorMainPage;
 import ui.page_object.Hilel.ConfirmEmailPage;
